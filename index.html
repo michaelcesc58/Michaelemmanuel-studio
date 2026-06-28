@@ -1,0 +1,2076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Michael Emmanuel | Digital Creative Studio</title>
+<meta name="description" content="Email writing, graphic design, and code services by Michael Emmanuel. Words that sell. Design that stops. Code that works.">
+<meta name="author" content="Michael Emmanuel">
+<meta name="keywords" content="email writing Nigeria, graphic design Nigeria, web developer Nigeria, freelance designer Abuja Lagos, Michael Emmanuel creative studio">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0D0D0D">
+
+<!-- Open Graph (Facebook, LinkedIn, WhatsApp previews) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://michaelemmanuel.studio/">
+<meta property="og:title" content="Michael Emmanuel | Digital Creative Studio">
+<meta property="og:description" content="Email writing, graphic design, and code services from one trusted Nigerian creative. Words that sell. Design that stops. Code that works.">
+<meta property="og:image" content="https://michaelemmanuel.studio/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_NG">
+<meta property="og:site_name" content="Michael Emmanuel Studio">
+
+<!-- Twitter / X card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://michaelemmanuel.studio/">
+<meta name="twitter:title" content="Michael Emmanuel | Digital Creative Studio">
+<meta name="twitter:description" content="Email writing, graphic design, and code services from one trusted Nigerian creative.">
+<meta name="twitter:image" content="https://michaelemmanuel.studio/og-image.png">
+
+<!-- Cross-browser compatibility -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ME Studio">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="https://michaelemmanuel.studio/">
+
+<!-- Favicon inline SVG fallback -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230D0D0D'/><text y='.9em' font-size='72' x='50%' dominant-baseline='auto' text-anchor='middle' font-family='Georgia,serif' fill='%23C9962A' font-weight='900'>M</text></svg>">
+<link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='12' fill='%230D0D0D'/><text y='.9em' font-size='72' x='50%' dominant-baseline='auto' text-anchor='middle' font-family='Georgia,serif' fill='%23C9962A' font-weight='900'>M</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:      #0D0D0D;
+  --canvas:   #F7F4EF;
+  --gold:     #C9962A;
+  --gold-lt:  #F0D97A;
+  --mist:     #E8E4DC;
+  --slate:    #3A3A3A;
+  --white:    #FFFFFF;
+  --serif:    'Playfair Display', Georgia, serif;
+  --sans:     'Inter', system-ui, sans-serif;
+  --mono:     'Space Mono', monospace;
+  --ease:     cubic-bezier(0.16, 1, 0.3, 1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { background: var(--canvas); color: var(--ink); font-family: var(--sans); overflow-x: hidden; }
+a { color: inherit; text-decoration: none; }
+img { display: block; max-width: 100%; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 300;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1.2rem 5vw;
+  background: rgba(247,244,239,0.93);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--mist);
+  transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: 0 2px 24px rgba(0,0,0,0.08); }
+.nav-logo { font-family: var(--serif); font-size: 1.35rem; font-weight: 900; letter-spacing: -0.01em; }
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; gap: 2rem; font-size: 0.85rem; font-weight: 500; }
+.nav-links a { transition: color 0.2s; }
+.nav-links a:hover { color: var(--gold); }
+.nav-right { display: flex; align-items: center; gap: 0.75rem; }
+.nav-cta {
+  background: var(--ink); color: var(--white);
+  padding: 0.55rem 1.3rem; border-radius: 2px;
+  font-size: 0.78rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  transition: background 0.2s, transform 0.2s;
+}
+.nav-cta:hover { background: var(--gold); transform: translateY(-1px); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: transform 0.3s, opacity 0.3s; }
+.hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+.mobile-drawer {
+  display: none; position: fixed; top: 62px; left: 0; right: 0; z-index: 299;
+  background: rgba(247,244,239,0.98); backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--mist);
+  padding: 1.5rem 5vw 2rem; flex-direction: column; gap: 1rem;
+  opacity: 0; transform: translateY(-8px); transition: opacity 0.3s var(--ease), transform 0.3s var(--ease);
+}
+.mobile-drawer.open { display: flex; opacity: 1; transform: translateY(0); }
+.mobile-drawer a { font-size: 1rem; font-weight: 600; padding: 0.4rem 0; border-bottom: 1px solid var(--mist); }
+.mobile-drawer a:last-child { border-bottom: none; color: var(--gold); }
+
+/* ── HERO ── */
+#hero {
+  min-height: 100vh; min-height: 100svh;
+  display: grid; place-items: center;
+  padding: 8rem 5vw 5rem;
+  background: var(--ink); position: relative; overflow: hidden;
+}
+.hero-grid {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image:
+    linear-gradient(rgba(201,150,42,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,150,42,0.06) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.hero-inner { max-width: 900px; margin: 0 auto; text-align: center; position: relative; z-index: 1; }
+.hero-eyebrow {
+  font-family: var(--mono); font-size: 0.73rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 1.5rem;
+  display: flex; align-items: center; justify-content: center; gap: 0.75rem;
+}
+.hero-eyebrow::before, .hero-eyebrow::after {
+  content: ''; display: block; width: 40px; height: 1px; background: var(--gold); opacity: 0.4;
+}
+.hero-h1 {
+  font-family: var(--serif); font-size: clamp(2.8rem, 7vw, 6.5rem);
+  font-weight: 900; line-height: 1.04; color: var(--white); letter-spacing: -0.02em;
+}
+.hero-h1 em { color: var(--gold); font-style: italic; }
+.hero-sub {
+  font-size: clamp(1rem, 2vw, 1.2rem); color: rgba(255,255,255,0.58);
+  max-width: 540px; margin: 1.5rem auto 2.5rem; line-height: 1.75; font-weight: 300;
+}
+.hero-btns { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.btn-gold {
+  background: var(--gold); color: var(--ink);
+  padding: 0.9rem 2.2rem; border-radius: 2px;
+  font-weight: 700; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;
+  transition: background 0.2s, transform 0.2s;
+}
+.btn-gold:hover { background: var(--gold-lt); transform: translateY(-2px); }
+.btn-ghost {
+  border: 1px solid rgba(255,255,255,0.28); color: var(--white);
+  padding: 0.9rem 2.2rem; border-radius: 2px;
+  font-size: 0.85rem; letter-spacing: 0.06em;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+.btn-ghost:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+.scroll-hint {
+  position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 0.4rem;
+  color: rgba(255,255,255,0.3); font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+  font-family: var(--mono); animation: bob 2s ease-in-out infinite;
+}
+@keyframes bob {
+  0%,100% { transform: translateX(-50%) translateY(0); }
+  50%      { transform: translateX(-50%) translateY(6px); }
+}
+
+/* ── STATS ── */
+#stats { background: var(--gold); display: flex; flex-wrap: wrap; }
+.stat { flex: 1; min-width: 140px; padding: 1.75rem 2.5rem; text-align: center; border-right: 1px solid rgba(0,0,0,0.12); }
+.stat:last-child { border-right: none; }
+.stat-num { font-family: var(--serif); font-size: 2.2rem; font-weight: 900; color: var(--ink); }
+.stat-label { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(0,0,0,0.5); margin-top: 0.2rem; }
+
+/* ── SHARED SECTION ── */
+section { padding: 7rem 5vw; }
+.s-eyebrow { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.9rem; }
+.s-title { font-family: var(--serif); font-size: clamp(2rem,4vw,3.1rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 1.2rem; }
+.s-body { font-size: 1.05rem; line-height: 1.8; color: var(--slate); max-width: 540px; }
+
+/* ── LOGOS ── */
+#logos { background: var(--white); padding: 2.5rem 5vw; border-top: 1px solid var(--mist); border-bottom: 1px solid var(--mist); }
+.logos-lbl { text-align: center; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(0,0,0,0.28); margin-bottom: 1.75rem; }
+.logos-row { display: flex; justify-content: center; align-items: center; gap: 3.5rem; flex-wrap: wrap; }
+.logo-item { font-size: 1rem; font-weight: 700; letter-spacing: -0.02em; color: rgba(0,0,0,0.16); transition: color 0.3s; }
+.logo-item:hover { color: rgba(0,0,0,0.5); }
+
+/* ── SERVICES ── */
+#services { background: var(--canvas); }
+.svc-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; max-width: 1200px; margin: 4rem auto 0; border: 1px solid var(--mist); }
+.svc-card { padding: 3rem; border-right: 1px solid var(--mist); border-bottom: 1px solid var(--mist); position: relative; overflow: hidden; transition: background 0.3s; }
+.svc-card:hover { background: var(--white); }
+.svc-card.r0 { border-right: none; }
+.svc-card.b0 { border-bottom: none; }
+.svc-icon { width: 50px; height: 50px; border-radius: 4px; display: flex; align-items: center; justify-content: center; background: var(--ink); margin-bottom: 1.4rem; transition: background 0.3s; }
+.svc-card:hover .svc-icon { background: var(--gold); }
+.svc-icon svg { stroke: var(--white); }
+.svc-name { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; margin-bottom: 0.7rem; letter-spacing: -0.01em; }
+.svc-desc { font-size: 0.925rem; line-height: 1.75; color: var(--slate); }
+.svc-list { margin-top: 1rem; list-style: none; }
+.svc-list li { font-size: 0.83rem; color: var(--slate); padding: 0.28rem 0; border-top: 1px solid var(--mist); display: flex; align-items: flex-start; gap: 0.5rem; }
+.svc-list li::before { content: '→'; color: var(--gold); font-family: var(--mono); flex-shrink: 0; }
+.svc-card.featured {
+  grid-column: 1 / -1; background: var(--ink); color: var(--white);
+  display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;
+  border-right: none; border-bottom: none;
+}
+.svc-card.featured:hover { background: var(--ink); }
+.svc-card.featured .svc-icon { background: var(--gold); }
+.svc-card.featured .svc-name { color: var(--white); }
+.svc-card.featured .svc-desc { color: rgba(255,255,255,0.62); }
+.svc-card.featured .svc-list li { color: rgba(255,255,255,0.62); border-top-color: rgba(255,255,255,0.09); }
+.code-box {
+  background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 6px; padding: 1.5rem; font-family: var(--mono); font-size: 0.76rem;
+  line-height: 1.8; color: rgba(255,255,255,0.48); overflow: hidden;
+}
+.c-kw  { color: #c084fc; }
+.c-fn  { color: var(--gold-lt); }
+.c-str { color: #86efac; }
+.c-cm  { color: rgba(255,255,255,0.24); }
+
+/* ── PORTFOLIO ── */
+#work { background: var(--ink); color: var(--white); }
+#work .s-body { color: rgba(255,255,255,0.58); }
+.work-grid {
+  display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5px;
+  margin-top: 4rem; background: rgba(255,255,255,0.04);
+  border: 1.5px solid rgba(255,255,255,0.07); border-radius: 2px; overflow: hidden;
+}
+.work-item { aspect-ratio: 4/3; position: relative; overflow: hidden; background: #181818; cursor: default; transition: transform 0.4s var(--ease); }
+.work-item[role="button"] { cursor: pointer; }
+.work-item:hover { transform: scale(1.03); z-index: 1; }
+.work-visual { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+.work-lbl {
+  position: absolute; bottom: 0; left: 0; right: 0; padding: 0.75rem 1rem;
+  background: linear-gradient(to top, rgba(0,0,0,0.88), transparent);
+  font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: rgba(255,255,255,0.8); opacity: 0; transition: opacity 0.3s;
+}
+.work-item:hover .work-lbl { opacity: 1; }
+/* Featured items always show label */
+.work-featured .work-lbl { opacity: 1; background: linear-gradient(to top, rgba(0,0,0,0.92), rgba(0,0,0,0.2)); }
+.work-badge {
+  position: absolute; top: 0.75rem; left: 0.75rem; z-index: 2;
+  background: rgba(197,151,58,0.92); color: #0D0D0D;
+  padding: 0.2rem 0.6rem; border-radius: 2px;
+  font-size: 0.6rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase;
+}
+.work-badge-red { background: rgba(220,38,38,0.9); color: #fff; }
+/* Click ripple hint on featured cards */
+.work-featured::after {
+  content: ''; position: absolute; inset: 0;
+  border: 2px solid rgba(197,151,58,0); border-radius: 2px;
+  transition: border-color 0.3s;
+}
+.work-featured:hover::after { border-color: rgba(197,151,58,0.4); }
+
+/* ── CASE STUDY ── */
+#case-study { background: var(--white); }
+.cs-card {
+  max-width: 1100px; margin: 3.5rem auto 0;
+  background: var(--ink); border-radius: 4px; overflow: hidden;
+  display: grid; grid-template-columns: 1fr 1.4fr;
+  cursor: pointer; transition: transform 0.3s var(--ease), box-shadow 0.3s;
+}
+.cs-card:hover { transform: translateY(-4px); box-shadow: 0 24px 60px rgba(0,0,0,0.25); }
+.cs-left {
+  background: #3D0B17; padding: 3.5rem;
+  display: flex; flex-direction: column; justify-content: space-between;
+  position: relative; overflow: hidden;
+}
+.cs-left::before {
+  content: ''; position: absolute; inset: 0;
+  background: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(255,255,255,0.02) 20px, rgba(255,255,255,0.02) 21px);
+}
+.cs-glyph {
+  font-family: var(--serif); font-size: 7rem; font-weight: 900;
+  color: rgba(197,151,58,0.13); position: absolute; bottom: 1rem; right: 1.5rem; pointer-events: none;
+}
+.cs-cat { font-family: var(--mono); font-size: 0.63rem; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(197,151,58,0.8); position: relative; }
+.cs-name { font-family: var(--serif); font-size: 1.9rem; font-weight: 900; color: #fff; line-height: 1.1; position: relative; margin: 0.9rem 0 0.5rem; }
+.cs-sub { font-size: 0.85rem; color: rgba(255,255,255,0.5); position: relative; line-height: 1.6; }
+.cs-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; position: relative; margin-top: 1.4rem; }
+.cs-tag { padding: 0.22rem 0.65rem; border: 1px solid rgba(255,255,255,0.1); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.4); border-radius: 2px; }
+.cs-right { padding: 3.5rem; }
+.cs-nums { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgba(255,255,255,0.06); margin-bottom: 2rem; }
+.cs-num { background: rgba(255,255,255,0.03); padding: 1.2rem; }
+.cs-num-val { font-family: var(--serif); font-size: 1.65rem; font-weight: 900; color: var(--gold); }
+.cs-num-lbl { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.32); margin-top: 0.2rem; }
+.cs-excerpt { font-size: 0.88rem; line-height: 1.75; color: rgba(255,255,255,0.52); margin-bottom: 2rem; }
+.cs-open {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  background: var(--gold); color: var(--ink);
+  padding: 0.75rem 1.5rem; border-radius: 2px;
+  font-weight: 700; font-size: 0.76rem; letter-spacing: 0.1em; text-transform: uppercase;
+  transition: background 0.2s;
+}
+.cs-open:hover { background: var(--gold-lt); }
+
+/* ── EMAIL SAMPLE ── */
+#email-sample { background: var(--canvas); }
+.email-card {
+  max-width: 1100px; margin: 3.5rem auto 0;
+  background: var(--white); border: 1px solid var(--mist); border-radius: 4px; overflow: hidden;
+  cursor: pointer; transition: transform 0.3s var(--ease), box-shadow 0.3s;
+}
+.email-card:hover { transform: translateY(-4px); box-shadow: 0 16px 48px rgba(0,0,0,0.1); }
+.email-topbar { background: var(--ink); padding: 1.2rem 2rem; display: flex; align-items: center; gap: 1rem; }
+.email-dots { display: flex; gap: 6px; }
+.email-dots span { width: 12px; height: 12px; border-radius: 50%; }
+.email-dots span:nth-child(1) { background: #ff5f57; }
+.email-dots span:nth-child(2) { background: #febc2e; }
+.email-dots span:nth-child(3) { background: #28c840; }
+.email-topbar-label { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.15em; color: rgba(255,255,255,0.3); margin-left: auto; }
+.email-meta { padding: 1.25rem 2rem; background: #fafafa; border-bottom: 1px solid var(--mist); }
+.email-row { display: flex; gap: 0.75rem; font-size: 0.82rem; margin-bottom: 0.4rem; }
+.email-row:last-child { margin-bottom: 0; }
+.email-lbl { font-weight: 700; color: var(--slate); min-width: 52px; flex-shrink: 0; }
+.email-val { color: var(--slate); }
+.email-subj { font-weight: 700; color: var(--ink); }
+.email-preview { padding: 1.75rem 2rem; font-size: 0.9rem; line-height: 1.85; color: var(--slate); }
+.email-preview p { margin-bottom: 0.9rem; }
+.email-preview p:last-child { margin-bottom: 0; }
+.email-bar { background: var(--gold); padding: 0.8rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; }
+.email-bar-label { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink); }
+.email-bar-btn {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: var(--ink); color: var(--white);
+  padding: 0.45rem 1rem; border-radius: 2px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  transition: background 0.2s;
+}
+.email-bar-btn:hover { background: var(--slate); }
+
+/* ── VELLORA VIDEO ── */
+#vellora-video { background: var(--ink); padding: 7rem 5vw; }
+#vellora-video .s-eyebrow { color: #C5973A; }
+#vellora-video .s-title { color: var(--white); }
+#vellora-video .s-body { color: rgba(255,255,255,0.55); }
+.video-wrapper {
+  max-width: 960px; margin: 3.5rem auto 0;
+  border-radius: 6px; overflow: hidden;
+  background: #0a0a0a;
+  box-shadow: 0 32px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(197,151,58,0.25);
+}
+.video-stage {
+  position: relative; width: 100%; padding-bottom: 56.25%;
+  background: #0a0a0a; overflow: hidden; cursor: pointer;
+}
+.video-stage canvas {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: block;
+}
+.video-overlay {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  background: rgba(0,0,0,0.42); transition: opacity 0.35s; z-index: 5;
+}
+.video-overlay.hidden { opacity: 0; pointer-events: none; }
+.play-btn {
+  width: 76px; height: 76px; border-radius: 50%;
+  background: rgba(197,151,58,0.9); border: 3px solid rgba(255,255,255,0.25);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform 0.25s, background 0.25s;
+  box-shadow: 0 8px 32px rgba(197,151,58,0.55);
+  cursor: pointer; pointer-events: all;
+}
+.play-btn:hover { transform: scale(1.1); background: #C5973A; }
+.play-btn svg { margin-left: 5px; }
+.video-overlay-lbl {
+  color: rgba(255,255,255,0.65); font-size: 0.72rem; font-weight: 600;
+  letter-spacing: 0.18em; text-transform: uppercase; margin-top: 1rem;
+  font-family: var(--mono);
+}
+.video-progress-wrap { position: absolute; bottom: 0; left: 0; right: 0; z-index: 6; }
+.video-progress-bg { width: 100%; height: 3px; background: rgba(255,255,255,0.12); cursor: pointer; }
+.video-progress-fill { height: 3px; background: #C5973A; width: 0%; }
+.video-controls {
+  background: rgba(10,10,10,0.97); padding: 0.7rem 1.25rem;
+  display: flex; align-items: center; gap: 0.75rem;
+  border-top: 1px solid rgba(197,151,58,0.12);
+}
+.vc-btn { background: none; border: none; cursor: pointer; padding: 0.2rem; color: rgba(255,255,255,0.6); display: flex; align-items: center; transition: color 0.2s; }
+.vc-btn:hover { color: #C5973A; }
+.vc-title { font-size: 0.73rem; font-weight: 600; color: rgba(255,255,255,0.45); letter-spacing: 0.05em; flex: 1; text-align: center; }
+.vc-time { font-family: var(--mono); font-size: 0.68rem; color: rgba(255,255,255,0.38); }
+.video-chips { display: flex; gap: 0.6rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem; }
+.video-chip { padding: 0.28rem 0.85rem; border: 1px solid rgba(197,151,58,0.28); font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(197,151,58,0.7); border-radius: 2px; font-family: var(--mono); }
+
+/* ── ABOUT ── */
+#about { background: var(--canvas); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: center; max-width: 1100px; margin: 0 auto; }
+.portrait-wrap { position: relative; }
+.portrait-frame { width: 100%; aspect-ratio: 3/4; background: var(--mist); border-radius: 2px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.portrait-initials { font-family: var(--serif); font-size: 8rem; font-weight: 900; color: rgba(0,0,0,0.07); user-select: none; }
+.portrait-badge {
+  position: absolute; bottom: -1.5rem; right: -1.5rem;
+  background: var(--gold); color: var(--ink);
+  width: 108px; height: 108px; border-radius: 50%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  font-family: var(--serif); font-size: 1.6rem; font-weight: 900;
+  box-shadow: 0 4px 20px rgba(201,150,42,0.4);
+}
+.portrait-badge span { font-size: 0.62rem; font-family: var(--sans); font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; }
+.skill-row { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: 1.75rem; }
+.skill-tag { padding: 0.38rem 0.8rem; border: 1px solid var(--mist); font-size: 0.73rem; font-weight: 600; letter-spacing: 0.04em; border-radius: 2px; background: var(--white); transition: border-color 0.2s; }
+.skill-tag:hover { border-color: var(--gold); }
+
+/* ── PROCESS ── */
+#process { background: var(--white); }
+.process-wrap { max-width: 1100px; margin: 0 auto; }
+.process-steps { display: grid; grid-template-columns: repeat(4,1fr); margin-top: 4rem; border-left: 1px solid var(--mist); }
+.p-step { padding: 2.5rem 2rem; border-right: 1px solid var(--mist); }
+.p-num { font-family: var(--serif); font-size: 3.5rem; font-weight: 900; color: var(--mist); line-height: 1; margin-bottom: 0.9rem; transition: color 0.3s; }
+.p-step:hover .p-num { color: var(--gold-lt); }
+.p-name { font-family: var(--serif); font-size: 1.12rem; font-weight: 700; margin-bottom: 0.55rem; }
+.p-desc { font-size: 0.865rem; line-height: 1.7; color: var(--slate); }
+
+/* ── TESTIMONIALS ── */
+#testimonials { background: var(--canvas); }
+.testi-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; margin-top: 3.5rem; }
+.testi-card { background: var(--white); padding: 2rem; border-radius: 2px; border: 1px solid var(--mist); position: relative; }
+.testi-card::before { content: '\201C'; font-family: var(--serif); font-size: 5rem; font-weight: 900; color: var(--gold-lt); position: absolute; top: 0.5rem; left: 1.25rem; line-height: 1; pointer-events: none; }
+.testi-text { font-size: 0.93rem; line-height: 1.75; color: var(--slate); margin-top: 1rem; }
+.testi-author { margin-top: 1.25rem; }
+.testi-name { font-weight: 700; font-size: 0.875rem; }
+.testi-role { font-size: 0.73rem; color: var(--slate); margin-top: 0.1rem; }
+
+/* ── CONTACT / CTA ── */
+#contact { background: var(--gold); padding: 6rem 5vw; text-align: center; }
+#contact .s-title { color: var(--ink); max-width: 640px; margin: 0 auto 1.25rem; }
+#contact .s-body { color: rgba(0,0,0,0.58); margin: 0 auto 2rem; text-align: center; }
+.contact-chips { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.contact-chip {
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  background: rgba(0,0,0,0.1); color: var(--ink);
+  padding: 0.65rem 1.25rem; border-radius: 2px;
+  font-size: 0.85rem; font-weight: 600;
+  transition: background 0.2s;
+}
+.contact-chip:hover { background: rgba(0,0,0,0.18); }
+.contact-form { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; max-width: 460px; margin: 0 auto; }
+.contact-input {
+  flex: 1; min-width: 200px; padding: 0.85rem 1.2rem;
+  border: 2px solid rgba(0,0,0,0.18); background: rgba(255,255,255,0.8);
+  border-radius: 2px; font-family: var(--sans); font-size: 0.9rem; outline: none;
+  transition: border-color 0.2s;
+}
+.contact-input:focus { border-color: var(--ink); }
+.btn-dark {
+  background: var(--ink); color: var(--white);
+  padding: 0.85rem 1.7rem; border: none; border-radius: 2px;
+  font-weight: 700; font-size: 0.83rem; letter-spacing: 0.08em; text-transform: uppercase;
+  cursor: pointer; transition: background 0.2s;
+}
+.btn-dark:hover { background: var(--slate); }
+
+/* ── FOOTER ── */
+footer { background: var(--ink); color: rgba(255,255,255,0.42); padding: 4rem 5vw 0; display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; }
+.footer-brand .nav-logo { font-size: 1.45rem; margin-bottom: 0.9rem; }
+.footer-brand p { font-size: 0.83rem; line-height: 1.7; max-width: 210px; }
+.footer-col h4 { font-size: 0.67rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.65); margin-bottom: 0.9rem; }
+.footer-col a { display: block; font-size: 0.83rem; margin-bottom: 0.48rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--gold); }
+.footer-bottom {
+  background: var(--ink); padding: 1.5rem 5vw 2rem; margin-top: 3rem;
+  display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  font-size: 0.73rem; color: rgba(255,255,255,0.22);
+}
+.footer-bottom a { color: var(--gold); }
+
+/* ── SCROLL REVEAL ── */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: 0.1s; }
+.d2 { transition-delay: 0.2s; }
+.d3 { transition-delay: 0.3s; }
+
+/* ── MODALS ── */
+.overlay {
+  position: fixed; inset: 0; z-index: 500;
+  background: rgba(0,0,0,0.78); backdrop-filter: blur(5px);
+  display: flex; align-items: flex-start; justify-content: center;
+  padding: 2rem 1rem; overflow-y: auto;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.35s var(--ease);
+}
+.overlay.open { opacity: 1; pointer-events: auto; }
+.modal {
+  width: 100%; border-radius: 4px; overflow: hidden; position: relative;
+  transform: translateY(36px) scale(0.97);
+  transition: transform 0.4s var(--ease);
+}
+.overlay.open .modal { transform: translateY(0) scale(1); }
+.modal-x {
+  position: absolute; top: 1.1rem; right: 1.1rem; z-index: 10;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(255,255,255,0.15); border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+.modal-x:hover { background: rgba(255,255,255,0.28); }
+.modal-x svg { pointer-events: none; }
+
+/* ── CAMPAIGN MODAL ── */
+#campaignModal .modal { background: #FAF7F2; max-width: 860px; }
+.cm-cover { background: #6B1A2A; padding: 3.5rem; position: relative; overflow: hidden; }
+.cm-cover::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(-45deg,transparent,transparent 30px,rgba(255,255,255,0.015) 30px,rgba(255,255,255,0.015) 31px); }
+.cm-ey { font-size: 0.63rem; letter-spacing: 0.25em; text-transform: uppercase; color: #C5973A; font-weight: 700; margin-bottom: 0.7rem; position: relative; }
+.cm-title { font-family: var(--serif); font-size: clamp(1.8rem,4vw,3rem); color: #fff; font-weight: 900; line-height: 1.05; position: relative; }
+.cm-title em { color: #C5973A; font-style: italic; }
+.cm-sub { font-size: 0.9rem; color: rgba(255,255,255,0.58); margin-top: 0.9rem; line-height: 1.7; max-width: 480px; position: relative; }
+.cm-badges { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.5rem; position: relative; }
+.cm-badge { border: 1px solid rgba(255,255,255,0.14); padding: 0.35rem 0.85rem; font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); border-radius: 2px; }
+.cm-badge.g { border-color: #C5973A; color: #C5973A; }
+.cm-sec { padding: 2.25rem 3rem; border-bottom: 1px solid #E0D8CE; }
+.cm-sec.sh { background: #F0EBE1; }
+.cm-sec.dk { background: #1A1410; color: #fff; border-bottom: none; }
+.cm-ey2 { font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; font-weight: 700; color: #6B1A2A; margin-bottom: 0.55rem; }
+.cm-ey2.lt { color: rgba(255,255,255,0.32); }
+.cm-h2 { font-family: var(--serif); font-size: clamp(1.25rem,2.5vw,1.8rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 0.9rem; }
+.cm-p { font-size: 0.86rem; line-height: 1.8; color: #4A4440; margin-bottom: 0.65rem; }
+.cm-sec.dk .cm-p { color: rgba(255,255,255,0.58); }
+.cm-nums { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: #E0D8CE; border: 1px solid #E0D8CE; margin: 1.25rem 0; }
+.cm-num { background: #FAF7F2; padding: 1.1rem 0.8rem; text-align: center; }
+.cm-num-val { font-family: var(--serif); font-size: 1.55rem; font-weight: 900; color: #6B1A2A; }
+.cm-num-lbl { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4A4440; margin-top: 0.25rem; }
+.cm-cities { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.85rem; margin: 1rem 0; }
+.cm-city { border: 1px solid #E0D8CE; padding: 1.25rem; background: #FAF7F2; border-radius: 2px; }
+.cm-city-name { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; color: #6B1A2A; margin-bottom: 0.25rem; }
+.cm-city-pop { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C5973A; margin-bottom: 0.6rem; }
+.cm-city-body { font-size: 0.78rem; line-height: 1.65; color: #4A4440; }
+.cm-phases { }
+.cm-phase { display: grid; grid-template-columns: 52px 1fr; gap: 1.25rem; padding: 1.25rem 0; border-bottom: 1px solid #E0D8CE; }
+.cm-phase:last-child { border-bottom: none; }
+.cm-phase-n { font-family: var(--serif); font-size: 2.2rem; font-weight: 900; color: #E0D8CE; line-height: 1; }
+.cm-phase-name { font-family: var(--serif); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.2rem; }
+.cm-phase-per { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #C5973A; margin-bottom: 0.45rem; }
+.cm-phase-body { font-size: 0.8rem; line-height: 1.7; color: #4A4440; }
+.cm-ul { list-style: none; margin-top: 0.45rem; }
+.cm-ul li { font-size: 0.78rem; color: #4A4440; padding: 0.18rem 0; border-top: 1px solid #E0D8CE; display: flex; align-items: flex-start; gap: 0.4rem; }
+.cm-ul li::before { content: '—'; color: #C5973A; font-weight: 700; flex-shrink: 0; }
+.cm-tbl { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.78rem; }
+.cm-tbl th { background: #6B1A2A; color: #fff; padding: 0.55rem 0.8rem; text-align: left; font-size: 0.6rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
+.cm-tbl td { padding: 0.65rem 0.8rem; border-bottom: 1px solid #E0D8CE; color: #4A4440; vertical-align: top; }
+.cm-tbl tr:hover td { background: #F0EBE1; }
+.pri { padding: 0.13rem 0.45rem; border-radius: 2px; font-size: 0.62rem; font-weight: 700; }
+.ph { background: rgba(107,26,42,0.11); color: #6B1A2A; }
+.pm { background: rgba(197,151,58,0.14); color: #8a6520; }
+.cm-bud { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin: 1rem 0; }
+.cm-bud-card { background: #F0EBE1; padding: 1.3rem; border: 1px solid #E0D8CE; border-radius: 2px; }
+.cm-bud-title { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: #4A4440; margin-bottom: 0.65rem; }
+.cm-bud-row { display: flex; justify-content: space-between; padding: 0.35rem 0; border-top: 1px solid #E0D8CE; font-size: 0.78rem; color: #4A4440; }
+.cm-bud-amt { font-weight: 700; color: #6B1A2A; font-family: var(--serif); }
+.cm-bud-total { display: flex; justify-content: space-between; margin-top: 0.5rem; padding-top: 0.5rem; border-top: 2px solid #6B1A2A; font-weight: 700; font-size: 0.82rem; }
+.cm-bud-total-amt { color: #6B1A2A; font-family: var(--serif); }
+.cm-kpis { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: #E0D8CE; border: 1px solid #E0D8CE; margin: 1rem 0; }
+.cm-kpi { background: #FAF7F2; padding: 1.1rem 0.9rem; }
+.cm-kpi-val { font-family: var(--serif); font-size: 1.3rem; font-weight: 900; color: #6B1A2A; }
+.cm-kpi-name { font-size: 0.7rem; font-weight: 600; color: #4A4440; margin-top: 0.2rem; }
+.cm-kpi-note { font-size: 0.62rem; color: #4A4440; opacity: 0.62; margin-top: 0.1rem; }
+.cm-risk-hdr { display: grid; grid-template-columns: 2fr 1fr 3fr; gap: 0.9rem; padding-bottom: 0.4rem; }
+.cm-risk-hdr span { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4A4440; }
+.cm-risk { display: grid; grid-template-columns: 2fr 1fr 3fr; gap: 0.9rem; padding: 0.65rem 0; border-top: 1px solid #E0D8CE; font-size: 0.78rem; color: #4A4440; }
+.rl { padding: 0.13rem 0.45rem; border-radius: 2px; font-size: 0.62rem; font-weight: 700; display: inline-block; }
+.rh { background: rgba(220,38,38,0.1); color: #b91c1c; }
+.rm { background: rgba(234,179,8,0.14); color: #854d0e; }
+.rl2 { background: rgba(34,197,94,0.11); color: #166534; }
+.cm-inv { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin-top: 1.25rem; }
+.cm-inv-card { padding: 1.1rem; border: 1px solid rgba(255,255,255,0.08); border-radius: 2px; }
+.cm-inv-title { color: #C5973A; font-size: 0.6rem; letter-spacing: 0.18em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.45rem; }
+.cm-inv-body { font-size: 0.8rem; color: rgba(255,255,255,0.55); line-height: 1.65; }
+.cm-cta { background: #6B1A2A; padding: 2.5rem 3rem; text-align: center; }
+.cm-cta h3 { font-family: var(--serif); font-size: 1.45rem; font-weight: 900; color: #fff; margin-bottom: 0.45rem; }
+.cm-cta p { font-size: 0.83rem; color: rgba(255,255,255,0.58); margin-bottom: 1.4rem; }
+.cm-cta-btns { display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; }
+.cm-btn { padding: 0.65rem 1.4rem; border-radius: 2px; font-weight: 700; font-size: 0.73rem; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; }
+.cm-btn.gld { background: #C5973A; color: #1A1410; border: none; }
+.cm-btn.out { border: 1px solid rgba(255,255,255,0.24); color: #fff; background: transparent; }
+
+/* ── EMAIL MODAL ── */
+#emailModal .modal { background: var(--white); max-width: 680px; }
+.em-hdr { background: var(--ink); padding: 1.75rem 2.25rem; }
+.em-hdr-top { display: flex; align-items: flex-start; justify-content: space-between; }
+.em-eyebrow { font-size: 0.62rem; font-family: var(--mono); letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.35rem; }
+.em-headline { font-family: var(--serif); font-size: 1.4rem; color: #fff; font-weight: 900; }
+.em-label { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.15em; color: rgba(255,255,255,0.28); padding-top: 0.2rem; }
+.em-meta { background: #f7f7f7; border-bottom: 1px solid var(--mist); padding: 1.1rem 2.25rem; }
+.em-row { display: flex; gap: 0.7rem; font-size: 0.82rem; margin-bottom: 0.38rem; }
+.em-row:last-child { margin-bottom: 0; }
+.em-ml { font-weight: 700; color: var(--slate); min-width: 52px; flex-shrink: 0; }
+.em-mv { color: var(--slate); }
+.em-subj { font-weight: 700; color: var(--ink); }
+.em-body { padding: 1.75rem 2.25rem; font-size: 0.9rem; line-height: 1.9; color: var(--slate); }
+.em-body p { margin-bottom: 1rem; }
+.em-sig { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--mist); }
+.em-sig-name { font-weight: 700; color: var(--ink); font-size: 0.9rem; }
+.em-sig-title { font-size: 0.78rem; color: var(--slate); margin-top: 0.12rem; }
+.em-sig-contact { font-size: 0.76rem; color: var(--gold); margin-top: 0.3rem; }
+.em-sig-web { font-size: 0.73rem; color: var(--slate); margin-top: 0.1rem; }
+.em-foot { background: var(--canvas); padding: 1.1rem 2.25rem; border-top: 1px solid var(--mist); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; }
+.em-foot-note { font-size: 0.7rem; color: var(--slate); font-family: var(--mono); }
+.em-copy {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  background: var(--ink); color: var(--white); border: none;
+  padding: 0.5rem 1rem; border-radius: 2px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase;
+  cursor: pointer; transition: background 0.2s;
+}
+.em-copy:hover { background: var(--gold); color: var(--ink); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .svc-grid { grid-template-columns: 1fr; }
+  .svc-card { border-right: none; border-bottom: 1px solid var(--mist); }
+  .svc-card.featured { grid-column: 1; grid-template-columns: 1fr; border-bottom: none; }
+  .work-grid { grid-template-columns: 1fr 1fr; }
+  .cs-card { grid-template-columns: 1fr; }
+  .cs-left { padding: 2rem; }
+  .cs-right { padding: 2rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 4rem; }
+  .process-steps { grid-template-columns: 1fr 1fr; }
+  .testi-grid { grid-template-columns: 1fr; }
+  footer { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .work-grid { grid-template-columns: 1fr; }
+  .process-steps { grid-template-columns: 1fr; }
+  footer { grid-template-columns: 1fr; gap: 2rem; }
+  #stats { flex-direction: column; }
+  .stat { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); }
+  .stat:last-child { border-bottom: none; }
+  .cm-cover { padding: 1.75rem; }
+  .cm-sec { padding: 1.75rem; }
+  .cm-nums { grid-template-columns: 1fr 1fr; }
+  .cm-cities { grid-template-columns: 1fr; }
+  .cm-bud { grid-template-columns: 1fr; }
+  .cm-kpis { grid-template-columns: 1fr 1fr; }
+  .cm-phase { grid-template-columns: 1fr; }
+  .cm-inv { grid-template-columns: 1fr; }
+  .cm-cta { padding: 1.75rem; }
+  .cm-risk { grid-template-columns: 1fr; }
+  .em-hdr { padding: 1.25rem 1.5rem; }
+  .em-meta { padding: 1rem 1.5rem; }
+  .em-body { padding: 1.25rem 1.5rem; }
+  .em-foot { padding: 1rem 1.5rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .scroll-hint { animation: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-logo">M<span>.</span>Emmanuel</div>
+  <div class="nav-links">
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#case-study">Case Study</a>
+    <a href="#email-sample">Email</a>
+    <a href="#vellora-video">Video</a>
+    <a href="#about">About</a>
+    <a href="#process">Process</a>
+    <a href="#testimonials">Reviews</a>
+  </div>
+  <div class="nav-right">
+    <a href="#contact" class="nav-cta">Start a Project</a>
+    <button class="hamburger" id="ham" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="drawer">
+  <a href="#services" onclick="closeDrawer()">Services</a>
+  <a href="#work" onclick="closeDrawer()">Work</a>
+  <a href="#case-study" onclick="closeDrawer()">Case Study</a>
+  <a href="#email-sample" onclick="closeDrawer()">Email Sample</a>
+  <a href="#vellora-video" onclick="closeDrawer()">Vellora Video</a>
+  <a href="#about" onclick="closeDrawer()">About</a>
+  <a href="#process" onclick="closeDrawer()">Process</a>
+  <a href="#testimonials" onclick="closeDrawer()">Reviews</a>
+  <a href="#contact" onclick="closeDrawer()">Start a Project →</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Digital Creative Studio</div>
+    <h1 class="hero-h1">Words that sell.<br><em>Design</em> that stops.<br>Code that works.</h1>
+    <p class="hero-sub">Michael Emmanuel helps brands communicate, look unforgettable, and build digital products — from the first email to the final deployment.</p>
+    <div class="hero-btns">
+      <a href="#services" class="btn-gold">Explore Services</a>
+      <a href="#work" class="btn-ghost">View Work</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-linecap="round">
+      <path d="M12 5v14M5 12l7 7 7-7"/>
+    </svg>
+    Scroll
+  </div>
+</section>
+
+<!-- STATS -->
+<div id="stats">
+  <div class="stat"><div class="stat-num">200+</div><div class="stat-label">Projects Completed</div></div>
+  <div class="stat"><div class="stat-num">98%</div><div class="stat-label">Client Satisfaction</div></div>
+  <div class="stat"><div class="stat-num">5yr</div><div class="stat-label">Experience</div></div>
+  <div class="stat"><div class="stat-num">3</div><div class="stat-label">Core Disciplines</div></div>
+</div>
+
+<!-- LOGOS -->
+<div id="logos">
+  <p class="logos-lbl">Trusted by brands in Nigeria &amp; beyond</p>
+  <div class="logos-row">
+    <span class="logo-item">Nexora</span>
+    <span class="logo-item">BrightPath</span>
+    <span class="logo-item">Arktive</span>
+    <span class="logo-item">ZenScale</span>
+    <span class="logo-item">Lumive</span>
+    <span class="logo-item">Crestfield</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="s-eyebrow reveal">What I Do</div>
+  <h2 class="s-title reveal d1">Three disciplines.<br>One creative mind.</h2>
+  <p class="s-body reveal d2">Whether you need words, visuals, or a working product — I handle the craft end-to-end, so you don't manage three different freelancers.</p>
+  <div class="svc-grid">
+    <div class="svc-card r0 reveal">
+      <div class="svc-icon">
+        <svg width="24" height="24" fill="none" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+          <polyline points="22,6 12,13 2,6"/>
+        </svg>
+      </div>
+      <div class="svc-name">Email Writing</div>
+      <p class="svc-desc">Persuasive, purpose-built email copy that builds relationships and drives opens, clicks, and conversions — every send.</p>
+      <ul class="svc-list">
+        <li>Cold outreach sequences</li>
+        <li>Newsletter campaigns</li>
+        <li>Sales funnels &amp; drip emails</li>
+        <li>Welcome &amp; onboarding flows</li>
+        <li>Re-engagement campaigns</li>
+      </ul>
+    </div>
+    <div class="svc-card reveal d1">
+      <div class="svc-icon">
+        <svg width="24" height="24" fill="none" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/>
+        </svg>
+      </div>
+      <div class="svc-name">Graphic Design</div>
+      <p class="svc-desc">Visuals with a point of view — brand identities, marketing materials, and digital graphics that communicate before a word is read.</p>
+      <ul class="svc-list">
+        <li>Brand identity &amp; logo design</li>
+        <li>Social media graphics</li>
+        <li>Flyers, posters &amp; banners</li>
+        <li>Pitch deck design</li>
+        <li>UI/UX visual design</li>
+      </ul>
+    </div>
+    <div class="svc-card featured reveal d2">
+      <div>
+        <div class="svc-icon">
+          <svg width="24" height="24" fill="none" stroke-width="1.8" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" stroke="white">
+            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+          </svg>
+        </div>
+        <div class="svc-name">Code Services</div>
+        <p class="svc-desc">From landing pages to full-stack web apps — clean, maintainable code shipped on time. I bridge design and engineering.</p>
+        <ul class="svc-list">
+          <li>Responsive websites &amp; landing pages</li>
+          <li>React / Next.js web apps</li>
+          <li>API integrations &amp; automation</li>
+          <li>E-commerce builds</li>
+          <li>Website performance optimisation</li>
+        </ul>
+      </div>
+      <div class="code-box">
+<span class="c-cm">// Convert visitors → customers</span>
+<br><span class="c-kw">const</span> page = <span class="c-fn">build</span>({
+<br>&nbsp;&nbsp;copy: <span class="c-str">"persuasive"</span>,
+<br>&nbsp;&nbsp;design: <span class="c-str">"on-brand"</span>,
+<br>&nbsp;&nbsp;perf: <span class="c-str">"blazing-fast"</span>,
+<br>&nbsp;&nbsp;conv: <span class="c-str">"optimised"</span>
+<br>});
+<br><br><span class="c-kw">await</span> page.<span class="c-fn">deploy</span>(); <span class="c-cm">// done.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="work">
+  <div class="s-eyebrow reveal">Portfolio</div>
+  <h2 class="s-title reveal d1">Proof over promises.</h2>
+  <p class="s-body reveal d2">Real work, real results — click any piece to see it in full. Including the Vellora wine campaign, the Anderson Aremu email, and the Vellora brand video ad.</p>
+
+  <div class="work-grid reveal d1">
+
+    <!-- ★ FEATURED: Vellora Campaign — opens campaignModal -->
+    <div class="work-item work-featured" onclick="openModal('campaignModal')" role="button" tabindex="0" aria-label="View Vellora campaign">
+      <div class="work-visual" style="background:linear-gradient(135deg,#2a0510,#6B1A2A)">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none">
+          <!-- Bottle shape -->
+          <rect x="42" y="10" width="16" height="8" rx="2" fill="rgba(197,151,58,0.4)"/>
+          <path d="M36 24 Q34 32 34 42 L34 82 Q34 88 50 88 Q66 88 66 82 L66 42 Q66 32 64 24 Z" fill="rgba(107,26,42,0.7)" stroke="rgba(197,151,58,0.6)" stroke-width="1.2"/>
+          <!-- Label -->
+          <rect x="38" y="48" width="24" height="20" rx="1" fill="rgba(197,151,58,0.15)" stroke="rgba(197,151,58,0.5)" stroke-width="0.8"/>
+          <text x="50" y="60" font-family="serif" font-size="9" font-weight="700" fill="rgba(197,151,58,0.95)" text-anchor="middle">VELLORA</text>
+          <text x="50" y="65" font-family="serif" font-size="5" fill="rgba(197,151,58,0.7)" text-anchor="middle">PREMIUM WINE</text>
+          <!-- Shine -->
+          <line x1="40" y1="28" x2="40" y2="78" stroke="rgba(255,255,255,0.07)" stroke-width="4"/>
+        </svg>
+      </div>
+      <div class="work-badge">Campaign</div>
+      <div class="work-lbl">Vellora Wine — Investor Marketing Campaign · Click to view</div>
+    </div>
+
+    <!-- ★ FEATURED: Anderson Aremu Email — opens emailModal -->
+    <div class="work-item work-featured" onclick="openModal('emailModal')" role="button" tabindex="0" aria-label="View Anderson Aremu email">
+      <div class="work-visual" style="background:linear-gradient(135deg,#0d0d1f,#1a1a35)">
+        <svg width="100" height="90" viewBox="0 0 100 90" fill="none">
+          <!-- Envelope -->
+          <rect x="8" y="18" width="84" height="58" rx="4" fill="rgba(201,150,42,0.08)" stroke="rgba(201,150,42,0.45)" stroke-width="1.2"/>
+          <path d="M8 24 L50 52 L92 24" stroke="rgba(201,150,42,0.6)" stroke-width="1.2" fill="none"/>
+          <!-- Letter lines -->
+          <rect x="20" y="38" width="28" height="2" rx="1" fill="rgba(255,255,255,0.15)"/>
+          <rect x="20" y="44" width="40" height="2" rx="1" fill="rgba(255,255,255,0.1)"/>
+          <rect x="20" y="50" width="34" height="2" rx="1" fill="rgba(255,255,255,0.08)"/>
+          <rect x="20" y="56" width="22" height="2" rx="1" fill="rgba(255,255,255,0.06)"/>
+          <!-- Signature line -->
+          <rect x="20" y="65" width="30" height="1.5" rx="0.75" fill="rgba(201,150,42,0.4)"/>
+          <text x="50" y="30" font-family="serif" font-size="7" fill="rgba(201,150,42,0.7)" text-anchor="middle">To: Mr. Anderson Aremu</text>
+        </svg>
+      </div>
+      <div class="work-badge">Email</div>
+      <div class="work-lbl">Email to Anderson Aremu — Vellora Meeting Request · Click to read</div>
+    </div>
+
+    <!-- ★ FEATURED: Vellora Video Ad — scrolls to video section -->
+    <div class="work-item work-featured" onclick="scrollToVideo()" role="button" tabindex="0" aria-label="Watch Vellora video ad">
+      <div class="work-visual" style="background:linear-gradient(135deg,#0a0005,#1a0810)">
+        <svg width="110" height="80" viewBox="0 0 110 80" fill="none">
+          <!-- Screen frame -->
+          <rect x="5" y="8" width="100" height="60" rx="4" fill="rgba(107,26,42,0.2)" stroke="rgba(197,151,58,0.35)" stroke-width="1"/>
+          <!-- Wine bottle silhouette inside screen -->
+          <path d="M46 16 Q45 20 45 26 L45 55 Q45 60 55 60 Q65 60 65 55 L65 26 Q65 20 64 16 Z" fill="rgba(107,26,42,0.6)" stroke="rgba(197,151,58,0.3)" stroke-width="0.8"/>
+          <rect x="49" y="14" width="12" height="5" rx="1" fill="rgba(197,151,58,0.3)"/>
+          <!-- Play button overlay -->
+          <circle cx="55" cy="38" r="14" fill="rgba(197,151,58,0.25)" stroke="rgba(197,151,58,0.7)" stroke-width="1.2"/>
+          <polygon points="51,32 65,38 51,44" fill="rgba(197,151,58,0.9)"/>
+          <!-- Screen base -->
+          <rect x="45" y="68" width="20" height="3" rx="1" fill="rgba(255,255,255,0.1)"/>
+          <rect x="38" y="71" width="34" height="2" rx="1" fill="rgba(255,255,255,0.08)"/>
+        </svg>
+      </div>
+      <div class="work-badge work-badge-red">▶ Video</div>
+      <div class="work-lbl">Vellora Wine — 30-Second Brand Ad · Click to watch</div>
+    </div>
+
+    <!-- General: Email Campaign -->
+    <div class="work-item">
+      <div class="work-visual" style="background:linear-gradient(135deg,#1a1a2e,#16213e)">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <rect x="10" y="22" width="60" height="40" rx="4" fill="rgba(201,150,42,0.1)" stroke="rgba(201,150,42,0.4)" stroke-width="1.2"/>
+          <path d="M10 28 L40 50 L70 28" stroke="rgba(201,150,42,0.55)" stroke-width="1.2" fill="none"/>
+          <rect x="20" y="38" width="18" height="2" rx="1" fill="rgba(255,255,255,0.15)"/>
+          <rect x="20" y="44" width="28" height="2" rx="1" fill="rgba(255,255,255,0.1)"/>
+        </svg>
+      </div>
+      <div class="work-lbl">Cold Email Sequence – 48% open rate</div>
+    </div>
+
+    <!-- General: Brand Identity -->
+    <div class="work-item">
+      <div class="work-visual" style="background:linear-gradient(135deg,#0f0f0f,#1c1c1c)">
+        <svg width="90" height="90" viewBox="0 0 90 90" fill="none">
+          <circle cx="45" cy="45" r="28" stroke="rgba(201,150,42,0.45)" stroke-width="1.4"/>
+          <circle cx="45" cy="45" r="18" fill="rgba(201,150,42,0.1)" stroke="rgba(201,150,42,0.25)" stroke-width="1"/>
+          <text x="45" y="50" font-family="serif" font-size="16" font-weight="700" fill="rgba(201,150,42,0.85)" text-anchor="middle">ME</text>
+        </svg>
+      </div>
+      <div class="work-lbl">Brand Identity – Full system</div>
+    </div>
+
+    <!-- General: Web App -->
+    <div class="work-item">
+      <div class="work-visual" style="background:linear-gradient(135deg,#0d1117,#161b22)">
+        <svg width="100" height="70" viewBox="0 0 100 70" fill="none">
+          <rect x="5" y="5" width="90" height="60" rx="3" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+          <rect x="5" y="5" width="90" height="12" rx="3" fill="rgba(96,165,250,0.08)"/>
+          <circle cx="15" cy="11" r="2.5" fill="rgba(255,80,80,0.5)"/>
+          <circle cx="24" cy="11" r="2.5" fill="rgba(255,200,60,0.5)"/>
+          <circle cx="33" cy="11" r="2.5" fill="rgba(80,255,80,0.5)"/>
+          <rect x="12" y="26" width="35" height="4" rx="1" fill="rgba(96,165,250,0.3)"/>
+          <rect x="12" y="34" width="50" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+          <rect x="12" y="48" width="25" height="8" rx="2" fill="rgba(201,150,42,0.4)"/>
+        </svg>
+      </div>
+      <div class="work-lbl">Web App – React / Node.js</div>
+    </div>
+
+    <!-- General: Social Kit -->
+    <div class="work-item">
+      <div class="work-visual" style="background:linear-gradient(160deg,#4f1d96,#1e1b4b)">
+        <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+          <rect x="12" y="12" width="56" height="56" rx="12" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+          <rect x="22" y="22" width="36" height="20" rx="4" fill="rgba(201,150,42,0.2)"/>
+          <rect x="22" y="47" width="24" height="3" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+          <rect x="22" y="53" width="16" height="2" rx="1" fill="rgba(255,255,255,0.15)"/>
+        </svg>
+      </div>
+      <div class="work-lbl">Social Media Kit – 12 templates</div>
+    </div>
+
+    <!-- General: Newsletter -->
+    <div class="work-item">
+      <div class="work-visual" style="background:linear-gradient(135deg,#1a1a1a,#2a1a0e)">
+        <svg width="70" height="85" viewBox="0 0 70 85" fill="none">
+          <rect x="6" y="6" width="58" height="73" rx="3" fill="rgba(201,150,42,0.06)" stroke="rgba(201,150,42,0.22)" stroke-width="1"/>
+          <rect x="14" y="16" width="42" height="5" rx="1" fill="rgba(201,150,42,0.5)"/>
+          <rect x="14" y="26" width="42" height="2" rx="1" fill="rgba(255,255,255,0.12)"/>
+          <rect x="14" y="32" width="34" height="2" rx="1" fill="rgba(255,255,255,0.08)"/>
+          <rect x="14" y="38" width="38" height="2" rx="1" fill="rgba(255,255,255,0.07)"/>
+          <rect x="14" y="50" width="20" height="8" rx="2" fill="rgba(201,150,42,0.28)"/>
+        </svg>
+      </div>
+      <div class="work-lbl">Newsletter – B2B SaaS client</div>
+    </div>
+
+    <!-- General: Landing Page -->
+    <div class="work-item">
+      <div class="work-visual" style="background:linear-gradient(135deg,#0c1a12,#0a2218)">
+        <svg width="100" height="72" viewBox="0 0 100 72" fill="none">
+          <rect x="5" y="5" width="90" height="62" rx="3" fill="none" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+          <rect x="25" y="16" width="50" height="8" rx="2" fill="rgba(52,211,153,0.15)"/>
+          <rect x="30" y="28" width="40" height="3" rx="1" fill="rgba(255,255,255,0.08)"/>
+          <rect x="35" y="34" width="30" height="3" rx="1" fill="rgba(255,255,255,0.06)"/>
+          <rect x="34" y="46" width="32" height="10" rx="2" fill="rgba(52,211,153,0.22)"/>
+        </svg>
+      </div>
+      <div class="work-lbl">Landing Page – 9.2% conversion</div>
+    </div>
+
+  </div><!-- end work-grid -->
+</section>
+
+<!-- CASE STUDY -->
+<section id="case-study">
+  <div class="s-eyebrow reveal">Featured Case Study</div>
+  <h2 class="s-title reveal d1">Marketing strategy,<br>built for investors.</h2>
+  <p class="s-body reveal d2">A full structural marketing campaign developed for a premium wine brand entering Abuja, Kaduna, and Lagos — covering audience research, phased rollout, channel mix, budget, and KPIs.</p>
+
+  <div class="cs-card reveal d1" onclick="openModal('campaignModal')" role="button" tabindex="0" aria-label="Open Vellora campaign">
+    <div class="cs-left">
+      <div>
+        <div class="cs-cat">Marketing Campaign · Consumer Goods · Nigeria</div>
+        <div class="cs-name">Vellora Premium Wine</div>
+        <p class="cs-sub">Investor marketing campaign targeting three Nigerian cities for a new premium wine brand launch.</p>
+      </div>
+      <div class="cs-tags">
+        <span class="cs-tag">Strategy</span>
+        <span class="cs-tag">Market Research</span>
+        <span class="cs-tag">Brand Launch</span>
+        <span class="cs-tag">Investor Relations</span>
+        <span class="cs-tag">12-Month Roadmap</span>
+      </div>
+      <div class="cs-glyph">V</div>
+    </div>
+    <div class="cs-right">
+      <div class="cs-nums">
+        <div class="cs-num"><div class="cs-num-val">₦4.2B</div><div class="cs-num-lbl">Addressable Market</div></div>
+        <div class="cs-num"><div class="cs-num-val">3.4×</div><div class="cs-num-lbl">Projected ROI Yr3</div></div>
+        <div class="cs-num"><div class="cs-num-val">₦85M</div><div class="cs-num-lbl">Campaign Budget</div></div>
+        <div class="cs-num"><div class="cs-num-val">3</div><div class="cs-num-lbl">Target Cities</div></div>
+      </div>
+      <p class="cs-excerpt">A structured, investor-facing campaign built across four phases — brand launch, market penetration, investor conversion, and retention — with full budget breakdown and risk register.</p>
+      <span class="cs-open">
+        View Full Campaign
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- EMAIL SAMPLE -->
+<section id="email-sample">
+  <div class="s-eyebrow reveal">Email Writing Sample</div>
+  <h2 class="s-title reveal d1">Emails that open<br>real doors.</h2>
+  <p class="s-body reveal d2">A real business email written for a meeting with Mr. Anderson Aremu regarding the Vellora wine brand — strategic, professional, and impossible to ignore.</p>
+
+  <div class="email-card reveal d1" onclick="openModal('emailModal')" role="button" tabindex="0" aria-label="Read full email to Anderson Aremu">
+    <div class="email-topbar">
+      <div class="email-dots"><span></span><span></span><span></span></div>
+      <div class="email-topbar-label">Business Email · Click to read in full</div>
+    </div>
+    <div class="email-meta">
+      <div class="email-row"><span class="email-lbl">To:</span><span class="email-val">Anderson Aremu &lt;anderson.aremu@vellora.ng&gt;</span></div>
+      <div class="email-row"><span class="email-lbl">From:</span><span class="email-val">Michael Emmanuel &lt;michaelcesc58@gmail.com&gt;</span></div>
+      <div class="email-row"><span class="email-lbl">Subject:</span><span class="email-val email-subj">Meeting Request — Vellora Wine Introduction &amp; Collaboration</span></div>
+    </div>
+    <div class="email-preview">
+      <p>Dear Mr. Aremu,</p>
+      <p>I hope this message finds you in good health and high spirits. My name is Michael Emmanuel — a Nigerian-based creative professional specialising in email strategy, brand communication, and digital development...</p>
+      <p style="color:var(--gold);font-size:0.8rem;font-weight:700">▼ Click to read the full email</p>
+    </div>
+    <div class="email-bar">
+      <span class="email-bar-label">Professional Email Writing · Michael Emmanuel</span>
+      <span class="email-bar-btn">
+        Read Full Email
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- VELLORA VIDEO AD -->
+<section id="vellora-video">
+  <div class="s-eyebrow reveal">Brand Video</div>
+  <h2 class="s-title reveal d1">Vellora Premium Wine —<br>The Nigerian Table.</h2>
+  <p class="s-body reveal d2">A 30-second advertising film created for the Vellora brand launch. Click play to watch the full ad.</p>
+
+  <div class="video-wrapper reveal d1">
+    <div class="video-stage" id="videoStage" onclick="toggleVideo()">
+      <canvas id="velloraCanvas"></canvas>
+
+      <!-- Play/Pause overlay -->
+      <div class="video-overlay" id="videoOverlay">
+        <div class="play-btn" id="playBtn">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+        <div class="video-overlay-lbl">Watch the Vellora Ad · 0:30</div>
+      </div>
+
+      <!-- Progress -->
+      <div class="video-progress-wrap" id="progressWrap">
+        <div class="video-progress-bg" id="progressBg" onclick="seekVideo(event)">
+          <div class="video-progress-fill" id="progressFill"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="video-controls">
+      <button class="vc-btn" onclick="toggleVideo()" id="playPauseBtn" aria-label="Play/Pause">
+        <svg id="ppIcon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+      </button>
+      <button class="vc-btn" onclick="restartVideo()" aria-label="Restart">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.93"/></svg>
+      </button>
+      <span class="vc-title">Vellora Premium Wine — The Nigerian Table</span>
+      <button class="vc-btn" onclick="toggleMute()" id="muteBtn" aria-label="Mute">
+        <svg id="muteIcon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+      </button>
+      <span class="vc-time" id="vcTime">0:00 / 0:30</span>
+    </div>
+  </div>
+
+  <div class="video-chips">
+    <span class="video-chip">30-Second Ad</span>
+    <span class="video-chip">Premium Brand Film</span>
+    <span class="video-chip">Abuja · Kaduna · Lagos</span>
+    <span class="video-chip">2026 Campaign</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="portrait-wrap reveal">
+      <div class="portrait-frame">
+        <span class="portrait-initials">ME</span>
+      </div>
+      <div class="portrait-badge">5+<span>Years</span></div>
+    </div>
+    <div class="reveal d1">
+      <div class="s-eyebrow">About Michael</div>
+      <h2 class="s-title">The person behind the work.</h2>
+      <p class="s-body">I'm Michael Emmanuel — a Nigerian-based creative who sits comfortably at the intersection of writing, design, and technology. I've spent five years helping startups and established businesses communicate clearly, look sharp, and build digital products that perform.</p>
+      <p class="s-body" style="margin-top:1rem">My approach is simple: understand what you're actually trying to achieve, then build the best possible version of that thing — no fluff, no templates, no generic output.</p>
+      <div class="skill-row" style="margin-top:1.75rem">
+        <span class="skill-tag">Copywriting</span>
+        <span class="skill-tag">Email Marketing</span>
+        <span class="skill-tag">Brand Design</span>
+        <span class="skill-tag">Adobe Suite</span>
+        <span class="skill-tag">Figma</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">Node.js</span>
+        <span class="skill-tag">Tailwind CSS</span>
+        <span class="skill-tag">SEO</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div class="process-wrap">
+    <div class="s-eyebrow reveal">How It Works</div>
+    <h2 class="s-title reveal d1">A process that never wastes your time.</h2>
+    <div class="process-steps">
+      <div class="p-step reveal"><div class="p-num">01</div><div class="p-name">Discovery</div><p class="p-desc">We begin with a focused conversation about your goals, audience, and what success looks like for your project.</p></div>
+      <div class="p-step reveal d1"><div class="p-num">02</div><div class="p-name">Strategy</div><p class="p-desc">I build a clear plan: what will be created, how it will be executed, and how we'll measure results.</p></div>
+      <div class="p-step reveal d2"><div class="p-num">03</div><div class="p-name">Creation</div><p class="p-desc">The actual work — copy, design, or code — crafted with care and delivered for your review with context.</p></div>
+      <div class="p-step reveal d3"><div class="p-num">04</div><div class="p-name">Delivery</div><p class="p-desc">Revisions are included. The project closes when you're genuinely satisfied, not just done.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="s-eyebrow reveal">What Clients Say</div>
+  <h2 class="s-title reveal d1">Results, in their own words.</h2>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <p class="testi-text">Michael rewrote our cold email sequence and our reply rate tripled in the first two weeks. The man understands how people actually read their inbox.</p>
+      <div class="testi-author"><div class="testi-name">Tunde Adeyemi</div><div class="testi-role">Founder, Nexora Labs · Lagos</div></div>
+    </div>
+    <div class="testi-card reveal d1">
+      <p class="testi-text">Our new brand identity turned heads at an investor pitch. We had three VCs ask who designed it. The answer is Michael Emmanuel — and I said it very loudly.</p>
+      <div class="testi-author"><div class="testi-name">Chisom Eze</div><div class="testi-role">CEO, BrightPath Finance · Abuja</div></div>
+    </div>
+    <div class="testi-card reveal d2">
+      <p class="testi-text">Hired Michael to build a React dashboard from a rough Figma spec. Delivered on time, cleaner than the spec, and the code was actually maintainable. Will work with again.</p>
+      <div class="testi-author"><div class="testi-name">Samuel Okafor</div><div class="testi-role">CTO, Arktive Solutions · Kaduna</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / CTA -->
+<section id="contact">
+  <h2 class="s-title reveal">Ready to build something?</h2>
+  <p class="s-body reveal d1">Reach out directly or drop your email below. No pitch, no pressure.</p>
+  <div class="contact-chips reveal d1">
+    <a class="contact-chip" href="tel:+2348135398420">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 14.92z"/></svg>
+      08135398420
+    </a>
+    <a class="contact-chip" href="mailto:michaelcesc58@gmail.com">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      michaelcesc58@gmail.com
+    </a>
+    <a class="contact-chip" href="https://wa.me/2348135398420" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+  <div class="contact-form reveal d2">
+    <input class="contact-input" type="email" placeholder="your@email.com" id="ctaEmail">
+    <button class="btn-dark" id="ctaBtn">Let's Talk</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-brand">
+    <div class="nav-logo">M<span style="color:var(--gold)">.</span>Emmanuel</div>
+    <p>Email writing, graphic design, and code — from one trusted creative in Nigeria.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Services</h4>
+    <a href="#services">Email Writing</a>
+    <a href="#services">Graphic Design</a>
+    <a href="#services">Code &amp; Dev</a>
+  </div>
+  <div class="footer-col">
+    <h4>Studio</h4>
+    <a href="#about">About</a>
+    <a href="#work">Portfolio</a>
+    <a href="#case-study">Case Study</a>
+    <a href="#process">Process</a>
+  </div>
+  <div class="footer-col">
+    <h4>Contact</h4>
+    <a href="mailto:michaelcesc58@gmail.com">michaelcesc58@gmail.com</a>
+    <a href="tel:+2348135398420">08135398420</a>
+    <a href="https://wa.me/2348135398420" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#">LinkedIn</a>
+    <a href="#">Twitter / X</a>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <span>© 2026 Michael Emmanuel Creative Studio. All rights reserved.</span>
+  <span>Domain: <a href="#">michaelemmanuel.studio</a></span>
+</div>
+
+<!-- ═══════════════ CAMPAIGN MODAL ═══════════════ -->
+<div class="overlay" id="campaignModal" onclick="if(event.target===this)closeModal('campaignModal')">
+  <div class="modal">
+    <button class="modal-x" onclick="closeModal('campaignModal')" aria-label="Close">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="cm-cover">
+      <div class="cm-ey">Confidential · Investor Briefing · 2026</div>
+      <div class="cm-title">Vellora Premium Wine.<br>The Nigerian <em>Table.</em></div>
+      <p class="cm-sub">A 12-month structural marketing campaign for investors targeting Abuja, Kaduna, and Lagos.</p>
+      <div class="cm-badges">
+        <span class="cm-badge g">Abuja · Kaduna · Lagos</span>
+        <span class="cm-badge">Premium Wine</span>
+        <span class="cm-badge">12-Month Campaign</span>
+        <span class="cm-badge">₦85M Budget</span>
+      </div>
+    </div>
+    <div class="cm-sec">
+      <div class="cm-ey2">Executive Summary</div>
+      <div class="cm-h2">Why Vellora, why now.</div>
+      <p class="cm-p">Nigeria's premium beverage market is growing at 11% annually, driven by an expanding upper-middle class and a cultural shift toward curated dining. Vellora enters with a differentiated positioning: an accessible premium wine designed for the Nigerian palate, occasion, and social identity.</p>
+      <div class="cm-nums">
+        <div class="cm-num"><div class="cm-num-val">₦4.2B</div><div class="cm-num-lbl">Addressable Market</div></div>
+        <div class="cm-num"><div class="cm-num-val">11%</div><div class="cm-num-lbl">Annual Growth</div></div>
+        <div class="cm-num"><div class="cm-num-val">18mo</div><div class="cm-num-lbl">Break-even</div></div>
+        <div class="cm-num"><div class="cm-num-val">3.4×</div><div class="cm-num-lbl">Year 3 ROI</div></div>
+      </div>
+    </div>
+    <div class="cm-sec sh">
+      <div class="cm-ey2">Target Markets</div>
+      <div class="cm-h2">Three cities. One ambition.</div>
+      <div class="cm-cities">
+        <div class="cm-city"><div class="cm-city-name">Abuja</div><div class="cm-city-pop">Federal Capital · 4M pop.</div><p class="cm-city-body">Government officials, diplomats, high discretionary income and strong premium dining culture.</p></div>
+        <div class="cm-city"><div class="cm-city-name">Kaduna</div><div class="cm-city-pop">Commercial Hub · 3.7M pop.</div><p class="cm-city-body">Fast-growing entrepreneurial class. Underserved by premium wine brands — first-mover advantage.</p></div>
+        <div class="cm-city"><div class="cm-city-name">Lagos</div><div class="cm-city-pop">Commercial Capital · 16M pop.</div><p class="cm-city-body">Nigeria's media capital. Highest HNI concentration. Lagos performance cascades nationally.</p></div>
+      </div>
+    </div>
+    <div class="cm-sec">
+      <div class="cm-ey2">Target Audience</div>
+      <div class="cm-h2">Who buys Vellora.</div>
+      <table class="cm-tbl">
+        <thead><tr><th>Segment</th><th>Age</th><th>Key Motivation</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Urban Professionals</strong></td><td>28–45</td><td>Status, gifting, social occasions</td><td><span class="pri ph">High</span></td></tr>
+          <tr><td><strong>High Net Worth Individuals</strong></td><td>38–60</td><td>Exclusivity, investment potential</td><td><span class="pri ph">High</span></td></tr>
+          <tr><td><strong>Hospitality Buyers</strong></td><td>B2B</td><td>Quality, margin, customer approval</td><td><span class="pri ph">High</span></td></tr>
+          <tr><td><strong>Cultural Aspirants</strong></td><td>24–35</td><td>Identity, aesthetic, sharing</td><td><span class="pri pm">Med</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cm-sec sh">
+      <div class="cm-ey2">Campaign Roadmap</div>
+      <div class="cm-h2">Four phases. One story arc.</div>
+      <div class="cm-phases">
+        <div class="cm-phase">
+          <div class="cm-phase-n">01</div>
+          <div><div class="cm-phase-name">Foundation &amp; Brand Launch</div><div class="cm-phase-per">Months 1–2</div><p class="cm-phase-body">Establish Vellora's identity across all three cities. Seed awareness through press, influencer partnerships, and trade introductions.</p><ul class="cm-ul"><li>Brand launch events in Abuja and Lagos (private media dinners)</li><li>Distribute to 30 premium restaurants and hotels across 3 cities</li><li>Activate 15 tier-1 lifestyle influencers (Instagram + TikTok)</li><li>PR placements in BusinessDay, Vanguard Allure, ThisDay Style</li></ul></div>
+        </div>
+        <div class="cm-phase">
+          <div class="cm-phase-n">02</div>
+          <div><div class="cm-phase-name">Market Penetration</div><div class="cm-phase-per">Months 3–5</div><p class="cm-phase-body">Scale through paid media and experiential activations. Drive trial through retail and branded events.</p><ul class="cm-ul"><li>Paid social campaign targeting income-verified Nigerians</li><li>"Vellora Evening" pop-up tasting events in all 3 cities</li><li>Retail listing in ShopRite Premium, Spar, fine wine boutiques</li><li>Corporate gifting programme for C-suite decision makers</li></ul></div>
+        </div>
+        <div class="cm-phase">
+          <div class="cm-phase-n">03</div>
+          <div><div class="cm-phase-name">Investor Visibility &amp; Conversion</div><div class="cm-phase-per">Months 6–9</div><p class="cm-phase-body">Host structured investor roundtables and launch the Cellar Club loyalty programme.</p><ul class="cm-ul"><li>Vellora Investor Roundtable Series — 3 cities, quarterly</li><li>Launch Cellar Club membership (exclusive allocations + updates)</li><li>LinkedIn B2B campaign targeting CFOs and investment directors</li><li>Vellora Reserve Edition — limited allocation creates scarcity</li></ul></div>
+        </div>
+        <div class="cm-phase">
+          <div class="cm-phase-n">04</div>
+          <div><div class="cm-phase-name">Retention &amp; Scale</div><div class="cm-phase-per">Months 10–12</div><p class="cm-phase-body">Consolidate market share, deepen loyalty, and build the case for national rollout.</p><ul class="cm-ul"><li>"Vellora Harvest Gala" — Lagos flagship event for 300 HNIs</li><li>Year 1 investor impact report — performance, community, growth</li><li>Introduce subscription model (6-bottle monthly programme)</li><li>National rollout planning: Port Harcourt, Enugu</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <div class="cm-sec">
+      <div class="cm-ey2">Channel Strategy</div>
+      <div class="cm-h2">Where we show up.</div>
+      <table class="cm-tbl">
+        <thead><tr><th>Channel</th><th>Cities</th><th>Budget %</th><th>Priority</th></tr></thead>
+        <tbody>
+          <tr><td>Instagram &amp; TikTok</td><td>All 3</td><td>22%</td><td><span class="pri ph">High</span></td></tr>
+          <tr><td>Experiential Events</td><td>All 3</td><td>25%</td><td><span class="pri ph">High</span></td></tr>
+          <tr><td>Trade / Hospitality</td><td>All 3</td><td>18%</td><td><span class="pri ph">High</span></td></tr>
+          <tr><td>Influencer Partnerships</td><td>Lagos primary</td><td>12%</td><td><span class="pri ph">High</span></td></tr>
+          <tr><td>Print &amp; Broadcast PR</td><td>Abuja, Lagos</td><td>8%</td><td><span class="pri pm">Med</span></td></tr>
+          <tr><td>LinkedIn B2B</td><td>All 3</td><td>6%</td><td><span class="pri pm">Med</span></td></tr>
+          <tr><td>Retail Placement</td><td>All 3</td><td>9%</td><td><span class="pri pm">Med</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cm-sec sh">
+      <div class="cm-ey2">Budget</div>
+      <div class="cm-h2">₦85M campaign spend, year one.</div>
+      <div class="cm-bud">
+        <div class="cm-bud-card">
+          <div class="cm-bud-title">By Category</div>
+          <div class="cm-bud-row"><span>Events &amp; Experiential</span><span class="cm-bud-amt">₦21.25M</span></div>
+          <div class="cm-bud-row"><span>Digital &amp; Social</span><span class="cm-bud-amt">₦18.70M</span></div>
+          <div class="cm-bud-row"><span>Trade &amp; Distribution</span><span class="cm-bud-amt">₦15.30M</span></div>
+          <div class="cm-bud-row"><span>Influencer Partnerships</span><span class="cm-bud-amt">₦10.20M</span></div>
+          <div class="cm-bud-row"><span>PR &amp; Media</span><span class="cm-bud-amt">₦6.80M</span></div>
+          <div class="cm-bud-row"><span>Creative Production</span><span class="cm-bud-amt">₦6.00M</span></div>
+          <div class="cm-bud-row"><span>Retail &amp; Sampling</span><span class="cm-bud-amt">₦4.25M</span></div>
+          <div class="cm-bud-row"><span>Contingency</span><span class="cm-bud-amt">₦2.55M</span></div>
+          <div class="cm-bud-total"><span>Total</span><span class="cm-bud-total-amt">₦85.05M</span></div>
+        </div>
+        <div class="cm-bud-card">
+          <div class="cm-bud-title">By City</div>
+          <div class="cm-bud-row"><span>Lagos</span><span class="cm-bud-amt">₦38.25M</span></div>
+          <div class="cm-bud-row"><span>Abuja</span><span class="cm-bud-amt">₦28.05M</span></div>
+          <div class="cm-bud-row"><span>Kaduna</span><span class="cm-bud-amt">₦12.75M</span></div>
+          <div class="cm-bud-row"><span>Shared / National</span><span class="cm-bud-amt">₦6.00M</span></div>
+          <div class="cm-bud-total"><span>Total</span><span class="cm-bud-total-amt">₦85.05M</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="cm-sec">
+      <div class="cm-ey2">KPIs</div>
+      <div class="cm-h2">How we measure success.</div>
+      <div class="cm-kpis">
+        <div class="cm-kpi"><div class="cm-kpi-val">5,000+</div><div class="cm-kpi-name">Bottles sold — Month 3</div><div class="cm-kpi-note">Across all 3 cities</div></div>
+        <div class="cm-kpi"><div class="cm-kpi-val">80+</div><div class="cm-kpi-name">Hospitality partners</div><div class="cm-kpi-note">Hotels, restaurants, venues</div></div>
+        <div class="cm-kpi"><div class="cm-kpi-val">50K</div><div class="cm-kpi-name">Social followers</div><div class="cm-kpi-note">IG + TikTok by Month 6</div></div>
+        <div class="cm-kpi"><div class="cm-kpi-val">₦180M</div><div class="cm-kpi-name">Year 2 revenue</div><div class="cm-kpi-note">2× campaign investment</div></div>
+        <div class="cm-kpi"><div class="cm-kpi-val">500</div><div class="cm-kpi-name">Cellar Club members</div><div class="cm-kpi-note">Loyalty subscription</div></div>
+        <div class="cm-kpi"><div class="cm-kpi-val">3.4×</div><div class="cm-kpi-name">Year 3 ROI</div><div class="cm-kpi-note">Conservative projection</div></div>
+      </div>
+    </div>
+    <div class="cm-sec sh">
+      <div class="cm-ey2">Risk Register</div>
+      <div class="cm-h2">Known risks, clear mitigations.</div>
+      <div class="cm-risk-hdr"><span>Risk</span><span>Level</span><span>Mitigation</span></div>
+      <div class="cm-risk"><div>Currency devaluation / import costs</div><div><span class="rl rh">High</span></div><div>Lock 12-month supply contracts; explore local co-production.</div></div>
+      <div class="cm-risk"><div>Competitive entry by established brands</div><div><span class="rl rm">Med</span></div><div>Early trade relationships; venue exclusivity agreements.</div></div>
+      <div class="cm-risk"><div>NAFDAC / regulatory delays</div><div><span class="rl rm">Med</span></div><div>Engage regulatory counsel Day 1; secure all licenses pre-launch.</div></div>
+      <div class="cm-risk"><div>Influencer underperformance</div><div><span class="rl rm">Med</span></div><div>Performance-based contracts with 60-day review clauses.</div></div>
+      <div class="cm-risk"><div>Lower Kaduna uptake</div><div><span class="rl rl2">Low</span></div><div>Phased entry with smaller initial budget; scale on traction.</div></div>
+    </div>
+    <div class="cm-sec dk">
+      <div class="cm-ey2 lt">For Investors</div>
+      <div class="cm-h2" style="color:#fff">Why Vellora is the right investment.</div>
+      <p class="cm-p">Nigeria's premium consumer market is one of the fastest-growing on the continent. Vellora is positioned to capture this moment with a product, team, and campaign strategy built for sustained returns.</p>
+      <div class="cm-inv">
+        <div class="cm-inv-card"><div class="cm-inv-title">Market Timing</div><p class="cm-inv-body">Pre-consolidation market — first-mover brands that build trade loyalty now will be very hard to displace.</p></div>
+        <div class="cm-inv-card"><div class="cm-inv-title">Defensible Moat</div><p class="cm-inv-body">Distribution agreements, loyalty programme, and event equity create a real barrier within 18 months.</p></div>
+        <div class="cm-inv-card"><div class="cm-inv-title">Investor Transparency</div><p class="cm-inv-body">Monthly KPI reporting, quarterly roundtables, and a dedicated investor portal for full visibility.</p></div>
+        <div class="cm-inv-card"><div class="cm-inv-title">Scale Path</div><p class="cm-inv-body">3-city playbook expands to Port Harcourt and Enugu — then UK/UAE diaspora export channels.</p></div>
+      </div>
+    </div>
+    <div class="cm-cta">
+      <h3>Want a campaign like this?</h3>
+      <p>Michael Emmanuel builds marketing campaigns, investor briefs, and strategic documents that get real results.</p>
+      <div class="cm-cta-btns">
+        <a href="#contact" class="cm-btn gld" onclick="closeModal('campaignModal')">Start a Project</a>
+        <button class="cm-btn out" onclick="closeModal('campaignModal')">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ EMAIL MODAL ═══════════════ -->
+<div class="overlay" id="emailModal" onclick="if(event.target===this)closeModal('emailModal')">
+  <div class="modal">
+    <button class="modal-x" onclick="closeModal('emailModal')" aria-label="Close">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="em-hdr">
+      <div class="em-hdr-top">
+        <div>
+          <div class="em-eyebrow">Email Writing Sample</div>
+          <div class="em-headline">Business Meeting Request</div>
+        </div>
+        <div class="em-label">Vellora Wine · 2026</div>
+      </div>
+    </div>
+    <div class="em-meta">
+      <div class="em-row"><span class="em-ml">To:</span><span class="em-mv">Mr. Anderson Aremu &lt;anderson.aremu@vellora.ng&gt;</span></div>
+      <div class="em-row"><span class="em-ml">From:</span><span class="em-mv">Michael Emmanuel &lt;michaelcesc58@gmail.com&gt;</span></div>
+      <div class="em-row"><span class="em-ml">Date:</span><span class="em-mv">27 June 2026</span></div>
+      <div class="em-row"><span class="em-ml">Subject:</span><span class="em-mv em-subj">Meeting Request — Vellora Wine Introduction &amp; Collaboration</span></div>
+    </div>
+    <div class="em-body" id="emailText">
+      <p>Dear Mr. Aremu,</p>
+      <p>I hope this message finds you in good health and high spirits. My name is Michael Emmanuel — a Nigerian-based creative professional with expertise in email strategy, brand communication, graphic design, and digital development.</p>
+      <p>I am writing to request a brief meeting with you to discuss the Vellora Premium Wine brand and explore how my services might support its market entry and investor engagement across Abuja, Kaduna, and Lagos.</p>
+      <p>Having developed a comprehensive 12-month marketing campaign framework specifically for Vellora — covering audience strategy, phased rollout, channel selection, a ₦85M budget breakdown, and investor KPIs — I believe there is a strong alignment between my work and the vision you are building for this brand.</p>
+      <p>In our meeting, I would love to:<br>
+      → Walk you through the investor marketing campaign I have prepared<br>
+      → Discuss how strategic email communication can support your outreach to HNIs and partners<br>
+      → Explore branding and digital support for the Vellora launch</p>
+      <p>I am flexible with timing and happy to meet at your convenience — whether in person in Abuja or Lagos, or virtually. A 30-minute introductory call would be a great starting point.</p>
+      <p>Thank you sincerely for your time, Mr. Aremu. I look forward to the opportunity to connect and contribute to what I believe will be a defining brand in Nigeria's premium wine space.</p>
+      <div class="em-sig">
+        <div class="em-sig-name">Michael Emmanuel</div>
+        <div class="em-sig-title">Digital Creative — Email · Design · Code</div>
+        <div class="em-sig-contact">michaelcesc58@gmail.com &nbsp;·&nbsp; 08135398420</div>
+        <div class="em-sig-web">michaelemmanuel.studio</div>
+      </div>
+    </div>
+    <div class="em-foot">
+      <span class="em-foot-note">Email Writing Sample · Michael Emmanuel Studio</span>
+      <button class="em-copy" id="copyBtn" onclick="copyEmail()">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+        Copy Email
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Scroll to video section (from portfolio card)
+window.scrollToVideo = function() {
+  const vid = document.getElementById('vellora-video');
+  if (vid) { vid.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  // Auto-play video after short delay
+  setTimeout(function() {
+    if (typeof toggleVideo === 'function' && !isPlaying) toggleVideo();
+  }, 700);
+};
+
+// Nav shadow on scroll
+const navEl = document.getElementById('nav');
+window.addEventListener('scroll', () => navEl.classList.toggle('scrolled', window.scrollY > 40));
+
+// Hamburger / drawer
+const ham = document.getElementById('ham');
+const drawer = document.getElementById('drawer');
+ham.addEventListener('click', () => {
+  const open = drawer.classList.toggle('open');
+  ham.classList.toggle('open', open);
+  document.body.style.overflow = open ? 'hidden' : '';
+});
+function closeDrawer() {
+  drawer.classList.remove('open');
+  ham.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.1 }).observe
+? new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }).observe(document.body)
+: null;
+
+const revealObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+reveals.forEach(el => revealObs.observe(el));
+
+// Modal
+function openModal(id) {
+  document.getElementById(id).classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(id) {
+  document.getElementById(id).classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.overlay.open').forEach(o => {
+      o.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  }
+});
+
+// Keyboard support for clickable cards
+document.querySelectorAll('[role="button"]').forEach(el => {
+  el.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); el.click(); }
+  });
+});
+
+// CTA form
+document.getElementById('ctaBtn').addEventListener('click', function() {
+  const input = document.getElementById('ctaEmail');
+  if (input.value && input.value.includes('@')) {
+    input.style.borderColor = '#16a34a';
+    this.textContent = '✓ Got it!';
+    this.style.background = '#15803d';
+  } else {
+    input.style.borderColor = '#dc2626';
+    input.focus();
+  }
+});
+
+// ═══════════════════════════════════════════════
+// VELLORA CANVAS VIDEO AD ENGINE
+// ═══════════════════════════════════════════════
+(function() {
+  const canvas = document.getElementById('velloraCanvas');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+
+  // Timing
+  const DURATION = 30; // 30 seconds
+  let startTime = null;
+  let elapsed = 0;
+  let isPlaying = false;
+  let isMuted = false;
+  let rafId = null;
+  let lastPause = 0;
+
+  // Resize canvas to match display size
+  function resizeCanvas() {
+    const stage = document.getElementById('videoStage');
+    canvas.width  = stage.offsetWidth  || 960;
+    canvas.height = stage.offsetHeight || 540;
+  }
+  resizeCanvas();
+  window.addEventListener('resize', resizeCanvas);
+
+  // ── Scene definitions ──────────────────────────────
+  // Each scene: { start, end, draw(ctx, t, W, H) }
+  // t = normalised time within scene [0..1]
+  const scenes = [
+
+    // SCENE 1 (0-5s): Dark opener — logo reveal + tagline
+    { start: 0, end: 5, draw: function(ctx, t, W, H) {
+      // Deep wine background
+      ctx.fillStyle = '#1a0008';
+      ctx.fillRect(0, 0, W, H);
+
+      // Particle shimmer
+      for (let i = 0; i < 60; i++) {
+        const seed = i * 137.508;
+        const px = ((seed * 13.7 + t * 20 * (i % 3 === 0 ? 1 : -0.5)) % W + W) % W;
+        const py = ((seed * 7.3 + t * 15) % H + H) % H;
+        const alpha = 0.15 + 0.15 * Math.sin(t * Math.PI * 4 + i);
+        ctx.beginPath();
+        ctx.arc(px, py, 1 + Math.sin(i) * 0.8, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(197,151,58,${alpha})`;
+        ctx.fill();
+      }
+
+      // Gold ring reveal
+      const ringProgress = Math.min(t * 2, 1);
+      ctx.save();
+      ctx.translate(W / 2, H / 2);
+      ctx.beginPath();
+      ctx.arc(0, 0, Math.min(W, H) * 0.28, -Math.PI / 2, -Math.PI / 2 + ringProgress * Math.PI * 2);
+      ctx.strokeStyle = `rgba(197,151,58,${0.3 + ringProgress * 0.5})`;
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+      ctx.restore();
+
+      // VELLORA text
+      const textAlpha = Math.min(t * 3, 1);
+      ctx.save();
+      ctx.globalAlpha = textAlpha;
+      ctx.font = `900 ${Math.round(W * 0.09)}px Georgia,serif`;
+      ctx.fillStyle = '#ffffff';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('VELLORA', W / 2, H / 2 - H * 0.05);
+
+      // Gold subtitle
+      ctx.font = `${Math.round(W * 0.025)}px 'Space Mono', monospace`;
+      ctx.fillStyle = '#C5973A';
+      ctx.letterSpacing = '0.2em';
+      ctx.fillText('PREMIUM WINE', W / 2, H / 2 + H * 0.07);
+      ctx.restore();
+    }},
+
+    // SCENE 2 (5-10s): Vineyard / golden fields
+    { start: 5, end: 10, draw: function(ctx, t, W, H) {
+      // Sky gradient
+      const sky = ctx.createLinearGradient(0, 0, 0, H * 0.6);
+      sky.addColorStop(0, '#1a0a00');
+      sky.addColorStop(1, '#6B1A2A');
+      ctx.fillStyle = sky;
+      ctx.fillRect(0, 0, W, H * 0.6);
+
+      // Rolling ground
+      const ground = ctx.createLinearGradient(0, H * 0.55, 0, H);
+      ground.addColorStop(0, '#3a1a00');
+      ground.addColorStop(1, '#1a0a00');
+      ctx.fillStyle = ground;
+      ctx.fillRect(0, H * 0.55, W, H * 0.45);
+
+      // Animated sun / glare
+      const sunX = W * 0.5 + Math.sin(t * Math.PI) * W * 0.1;
+      const sunY = H * 0.3 - t * H * 0.12;
+      const grd = ctx.createRadialGradient(sunX, sunY, 0, sunX, sunY, W * 0.35);
+      grd.addColorStop(0, 'rgba(197,151,58,0.35)');
+      grd.addColorStop(0.4, 'rgba(197,151,58,0.1)');
+      grd.addColorStop(1, 'transparent');
+      ctx.fillStyle = grd;
+      ctx.fillRect(0, 0, W, H);
+
+      // Vine rows (animated)
+      ctx.save();
+      for (let row = 0; row < 8; row++) {
+        const yPos = H * 0.58 + row * H * 0.055;
+        const rowAlpha = 0.6 - row * 0.05;
+        ctx.strokeStyle = `rgba(80,40,10,${rowAlpha})`;
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.moveTo(0, yPos);
+        ctx.lineTo(W, yPos);
+        ctx.stroke();
+
+        // Posts
+        for (let post = 0; post < 12; post++) {
+          const px = (post / 11) * W + (t * 20 % (W / 11));
+          if (px > 0 && px < W) {
+            ctx.strokeStyle = `rgba(100,55,15,${rowAlpha})`;
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.moveTo(px, yPos - H * 0.04);
+            ctx.lineTo(px, yPos + H * 0.03);
+            ctx.stroke();
+          }
+        }
+      }
+      ctx.restore();
+
+      // Overlay text
+      ctx.save();
+      ctx.globalAlpha = Math.min(t * 2, 1) * (1 - Math.max(0, (t - 0.8) * 5));
+      ctx.font = `300 italic ${Math.round(W * 0.04)}px Georgia,serif`;
+      ctx.fillStyle = 'rgba(240,217,122,0.85)';
+      ctx.textAlign = 'center';
+      ctx.fillText('Crafted from Nigeria\'s finest grapes', W / 2, H * 0.25);
+      ctx.restore();
+    }},
+
+    // SCENE 3 (10-16s): Bottle hero shot
+    { start: 10, end: 16, draw: function(ctx, t, W, H) {
+      // Rich dark background
+      const bg = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, W*0.7);
+      bg.addColorStop(0, '#2a0a10');
+      bg.addColorStop(1, '#050005');
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+
+      // Bottle silhouette (drawn with canvas paths)
+      ctx.save();
+      const bx = W / 2;
+      const by = H * 0.15;
+      const bw = W * 0.10;
+      const bh = H * 0.72;
+      const scale = 0.85 + 0.15 * Math.min(t * 2, 1);
+      ctx.translate(bx, by + bh/2);
+      ctx.scale(scale, scale);
+      ctx.translate(-bx, -(by + bh/2));
+
+      // Bottle glow
+      const glow = ctx.createRadialGradient(bx, by + bh*0.5, 0, bx, by + bh*0.5, bw*3);
+      glow.addColorStop(0, 'rgba(107,26,42,0.5)');
+      glow.addColorStop(1, 'transparent');
+      ctx.fillStyle = glow;
+      ctx.fillRect(bx - bw*4, by - bh*0.2, bw*8, bh*1.4);
+
+      // Bottle body
+      ctx.beginPath();
+      ctx.moveTo(bx - bw*0.5, by + bh*0.22);
+      ctx.bezierCurveTo(bx - bw*0.5, by + bh*0.1, bx - bw*0.22, by + bh*0.04, bx - bw*0.15, by);
+      ctx.lineTo(bx + bw*0.15, by);
+      ctx.bezierCurveTo(bx + bw*0.22, by + bh*0.04, bx + bw*0.5, by + bh*0.1, bx + bw*0.5, by + bh*0.22);
+      ctx.lineTo(bx + bw*0.5, by + bh*0.9);
+      ctx.bezierCurveTo(bx + bw*0.5, by + bh, bx + bw*0.35, by + bh, bx, by + bh);
+      ctx.bezierCurveTo(bx - bw*0.35, by + bh, bx - bw*0.5, by + bh, bx - bw*0.5, by + bh*0.9);
+      ctx.closePath();
+
+      const bottleGrad = ctx.createLinearGradient(bx - bw*0.5, 0, bx + bw*0.5, 0);
+      bottleGrad.addColorStop(0, '#1a0810');
+      bottleGrad.addColorStop(0.25, '#4a1525');
+      bottleGrad.addColorStop(0.5, '#6B1A2A');
+      bottleGrad.addColorStop(0.75, '#3a1020');
+      bottleGrad.addColorStop(1, '#0d0508');
+      ctx.fillStyle = bottleGrad;
+      ctx.fill();
+
+      // Gold label
+      const labelY = by + bh * 0.38;
+      const labelH = bh * 0.3;
+      ctx.fillStyle = 'rgba(197,151,58,0.12)';
+      ctx.fillRect(bx - bw*0.42, labelY, bw*0.84, labelH);
+      ctx.strokeStyle = 'rgba(197,151,58,0.6)';
+      ctx.lineWidth = 0.8;
+      ctx.strokeRect(bx - bw*0.42, labelY, bw*0.84, labelH);
+
+      // Label text
+      ctx.font = `700 ${Math.round(bw*0.55)}px Georgia,serif`;
+      ctx.fillStyle = '#C5973A';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('V', bx, labelY + labelH*0.35);
+      ctx.font = `400 ${Math.round(bw*0.18)}px Georgia,serif`;
+      ctx.fillStyle = 'rgba(197,151,58,0.8)';
+      ctx.fillText('ELLORA', bx, labelY + labelH*0.65);
+
+      // Highlight
+      ctx.beginPath();
+      ctx.moveTo(bx - bw*0.35, by + bh*0.08);
+      ctx.lineTo(bx - bw*0.28, by + bh*0.85);
+      ctx.strokeStyle = 'rgba(255,255,255,0.07)';
+      ctx.lineWidth = bw * 0.18;
+      ctx.stroke();
+
+      ctx.restore();
+
+      // Side text
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, Math.min((t-0.4)*2.5, 1));
+      ctx.font = `300 italic ${Math.round(W * 0.033)}px Georgia,serif`;
+      ctx.fillStyle = 'rgba(240,217,122,0.75)';
+      ctx.textAlign = 'right';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('The Nigerian Table.', W * 0.88, H * 0.72);
+      ctx.restore();
+    }},
+
+    // SCENE 4 (16-22s): City montage — Abuja · Kaduna · Lagos
+    { start: 16, end: 22, draw: function(ctx, t, W, H) {
+      const cities = ['Abuja', 'Kaduna', 'Lagos'];
+      const cityColors = [
+        ['#0a0a1a','#1a1a3a'],
+        ['#0a1a0a','#1a2a10'],
+        ['#1a0a00','#2a1500']
+      ];
+      const cityIdx = Math.min(Math.floor(t * 3), 2);
+      const cityT   = (t * 3) - cityIdx;
+
+      // Background
+      const [c1, c2] = cityColors[cityIdx];
+      const bg2 = ctx.createLinearGradient(0, 0, W, H);
+      bg2.addColorStop(0, c1);
+      bg2.addColorStop(1, c2);
+      ctx.fillStyle = bg2;
+      ctx.fillRect(0, 0, W, H);
+
+      // Skyline silhouette
+      ctx.fillStyle = 'rgba(0,0,0,0.7)';
+      ctx.beginPath();
+      const buildings = [0.05,0.18,0.08,0.25,0.12,0.32,0.14,0.10,0.22,0.30,0.16,0.28,0.11,0.20,0.09,0.15,0.26,0.13];
+      let bx2 = 0;
+      for (let i = 0; i < buildings.length; i++) {
+        const bw2 = W * (0.04 + buildings[i] * 0.02);
+        const bh2 = H * (0.15 + buildings[i] * 1.2);
+        ctx.rect(bx2, H - bh2, bw2 - 2, bh2);
+        bx2 += bw2;
+      }
+      ctx.fill();
+
+      // Gold accent lights in buildings
+      for (let i = 0; i < 30; i++) {
+        const lx = (i * 83 + cityIdx * 41) % W;
+        const ly = H - ((i * 67) % (H * 0.4)) - H * 0.05;
+        const on = Math.sin(cityT * Math.PI * 4 + i * 1.3) > 0;
+        if (on) {
+          ctx.fillStyle = 'rgba(197,151,58,0.5)';
+          ctx.fillRect(lx, ly, 3, 4);
+        }
+      }
+
+      // City name
+      ctx.save();
+      const nameAlpha = Math.min(cityT * 4, 1) * Math.min((1-cityT)*4, 1);
+      ctx.globalAlpha = Math.max(0, nameAlpha);
+      ctx.font = `900 ${Math.round(W * 0.07)}px Georgia,serif`;
+      ctx.fillStyle = '#ffffff';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText(cities[cityIdx], W/2, H*0.38);
+      ctx.font = `400 ${Math.round(W * 0.022)}px 'Space Mono',monospace`;
+      ctx.fillStyle = '#C5973A';
+      ctx.fillText('NIGERIA', W/2, H*0.5);
+      ctx.restore();
+
+      // Glass clink animation
+      const clink = Math.min((cityT - 0.5) * 6, 1);
+      if (clink > 0) {
+        ctx.save();
+        ctx.globalAlpha = clink * 0.7;
+        ctx.strokeStyle = 'rgba(197,151,58,0.8)';
+        ctx.lineWidth = 1;
+        ctx.beginPath();
+        ctx.arc(W*0.85, H*0.25, clink * 20, 0, Math.PI*2);
+        ctx.stroke();
+        ctx.restore();
+      }
+    }},
+
+    // SCENE 5 (22-27s): Pour & glass shot
+    { start: 22, end: 27, draw: function(ctx, t, W, H) {
+      // Dark luxe background
+      ctx.fillStyle = '#0d0005';
+      ctx.fillRect(0, 0, W, H);
+
+      // Table surface
+      const table = ctx.createLinearGradient(0, H*0.65, 0, H);
+      table.addColorStop(0, '#1a0810');
+      table.addColorStop(1, '#0a0305');
+      ctx.fillStyle = table;
+      ctx.fillRect(0, H*0.65, W, H*0.35);
+      ctx.strokeStyle = 'rgba(197,151,58,0.15)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(0, H*0.65); ctx.lineTo(W, H*0.65); ctx.stroke();
+
+      // Wine glass
+      const gx = W * 0.5;
+      const gy = H * 0.15;
+      const gh = H * 0.55;
+      const gw = W * 0.07;
+
+      // Glass body
+      ctx.save();
+      ctx.beginPath();
+      ctx.moveTo(gx - gw*0.3, gy);
+      ctx.lineTo(gx + gw*0.3, gy);
+      ctx.lineTo(gx + gw*0.7, gy + gh*0.45);
+      ctx.bezierCurveTo(gx + gw, gy + gh*0.6, gx + gw, gy + gh*0.7, gx + gw*0.15, gy + gh*0.75);
+      ctx.lineTo(gx + gw*0.12, gy + gh*0.88);
+      ctx.lineTo(gx + gw*0.5, gy + gh*0.88);
+      ctx.lineTo(gx + gw*0.5, gy + gh);
+      ctx.lineTo(gx - gw*0.5, gy + gh);
+      ctx.lineTo(gx - gw*0.5, gy + gh*0.88);
+      ctx.lineTo(gx - gw*0.12, gy + gh*0.88);
+      ctx.lineTo(gx - gw*0.15, gy + gh*0.75);
+      ctx.bezierCurveTo(gx - gw, gy + gh*0.7, gx - gw, gy + gh*0.6, gx - gw*0.7, gy + gh*0.45);
+      ctx.closePath();
+      ctx.strokeStyle = 'rgba(255,255,255,0.18)';
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+
+      // Wine fill (animated pour)
+      const fillLevel = Math.min(t * 1.8, 0.5);
+      const wineTop = gy + gh*0.45 * (1 - fillLevel);
+      ctx.beginPath();
+      ctx.moveTo(gx - gw*0.65, gy + gh*0.45);
+      ctx.lineTo(gx + gw*0.65, gy + gh*0.45);
+      ctx.lineTo(gx + gw*0.15, gy + gh*0.75);
+      ctx.bezierCurveTo(gx + gw*0.5, gy + gh*0.8, gx - gw*0.5, gy + gh*0.8, gx - gw*0.15, gy + gh*0.75);
+      ctx.closePath();
+      ctx.clip();
+
+      const wineGrad = ctx.createLinearGradient(0, wineTop, 0, gy + gh*0.8);
+      wineGrad.addColorStop(0, 'rgba(107,26,42,0.9)');
+      wineGrad.addColorStop(1, 'rgba(50,5,15,0.95)');
+      ctx.fillStyle = wineGrad;
+      ctx.fillRect(gx - gw, wineTop, gw*2, gh);
+
+      // Wine surface ripple
+      ctx.strokeStyle = 'rgba(197,151,58,0.3)';
+      ctx.lineWidth = 0.8;
+      ctx.beginPath();
+      ctx.ellipse(gx, wineTop + 2, gw*0.6 * Math.min(t*2,1), 3, 0, 0, Math.PI*2);
+      ctx.stroke();
+      ctx.restore();
+
+      // Pour stream
+      if (t < 0.7) {
+        const streamAlpha = (1 - t/0.7) * 0.8;
+        ctx.save();
+        ctx.globalAlpha = streamAlpha;
+        ctx.strokeStyle = 'rgba(107,26,42,0.9)';
+        ctx.lineWidth = gw * 0.15 * (1 - t * 0.5);
+        ctx.lineCap = 'round';
+        ctx.beginPath();
+        ctx.moveTo(gx + gw * 0.8, gy - gh * 0.15);
+        ctx.bezierCurveTo(gx + gw * 0.5, gy + gh * 0.1, gx + gw * 0.3, gy + gh * 0.2, gx, wineTop);
+        ctx.stroke();
+        ctx.restore();
+      }
+
+      // Text overlay
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, Math.min((t - 0.5) * 3, 1));
+      ctx.font = `300 italic ${Math.round(W*0.038)}px Georgia,serif`;
+      ctx.fillStyle = 'rgba(240,217,122,0.85)';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('Taste the occasion.', W/2, H*0.82);
+      ctx.restore();
+    }},
+
+    // SCENE 6 (27-30s): End card
+    { start: 27, end: 30, draw: function(ctx, t, W, H) {
+      // Dark fade in
+      ctx.fillStyle = '#050005';
+      ctx.fillRect(0, 0, W, H);
+
+      // Radial glow
+      const glow2 = ctx.createRadialGradient(W/2, H/2, 0, W/2, H/2, W*0.5);
+      glow2.addColorStop(0, `rgba(107,26,42,${0.4 * t})`);
+      glow2.addColorStop(1, 'transparent');
+      ctx.fillStyle = glow2;
+      ctx.fillRect(0, 0, W, H);
+
+      // Gold divider line
+      const lineW = Math.min(t * 3, 1) * W * 0.25;
+      ctx.strokeStyle = 'rgba(197,151,58,0.6)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(W/2 - lineW/2, H*0.38);
+      ctx.lineTo(W/2 + lineW/2, H*0.38);
+      ctx.stroke();
+
+      // VELLORA
+      ctx.save();
+      ctx.globalAlpha = Math.min(t * 2.5, 1);
+      ctx.font = `900 ${Math.round(W * 0.095)}px Georgia,serif`;
+      ctx.fillStyle = '#ffffff';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'middle';
+      ctx.fillText('VELLORA', W/2, H*0.45);
+
+      ctx.font = `400 ${Math.round(W * 0.022)}px 'Space Mono',monospace`;
+      ctx.fillStyle = 'rgba(197,151,58,0.85)';
+      ctx.fillText('PREMIUM WINE', W/2, H*0.56);
+
+      // Second divider
+      ctx.strokeStyle = 'rgba(197,151,58,0.4)';
+      ctx.lineWidth = 0.8;
+      ctx.beginPath();
+      ctx.moveTo(W/2 - lineW/2 * 0.6, H*0.63);
+      ctx.lineTo(W/2 + lineW/2 * 0.6, H*0.63);
+      ctx.stroke();
+
+      ctx.font = `300 italic ${Math.round(W * 0.028)}px Georgia,serif`;
+      ctx.fillStyle = 'rgba(255,255,255,0.5)';
+      ctx.fillText('The Nigerian Table.', W/2, H*0.72);
+      ctx.restore();
+
+      // Investor call
+      ctx.save();
+      ctx.globalAlpha = Math.max(0, Math.min((t - 0.6) * 4, 1));
+      ctx.font = `600 ${Math.round(W * 0.018)}px 'Space Mono',monospace`;
+      ctx.fillStyle = 'rgba(197,151,58,0.7)';
+      ctx.textAlign = 'center';
+      ctx.fillText('Abuja · Kaduna · Lagos — 2026', W/2, H*0.85);
+      ctx.restore();
+    }}
+  ];
+
+  // ── Render loop ────────────────────────────────────
+  function getScene(time) {
+    for (let s of scenes) {
+      if (time >= s.start && time < s.end) return s;
+    }
+    return scenes[scenes.length - 1];
+  }
+
+  function render(time) {
+    const W = canvas.width, H = canvas.height;
+    const scene = getScene(time);
+    const t = (time - scene.start) / (scene.end - scene.start);
+    scene.draw(ctx, Math.max(0, Math.min(t, 1)), W, H);
+
+    // Time overlay (top-right corner, subtle)
+    const secs = Math.floor(time);
+    const s2 = time - (Math.floor(time / (scene.end - scene.start)) * (scene.end - scene.start));
+    ctx.save();
+    ctx.font = '10px Space Mono, monospace';
+    ctx.fillStyle = 'rgba(255,255,255,0.15)';
+    ctx.textAlign = 'right';
+    ctx.textBaseline = 'top';
+    ctx.fillText(`0:${String(secs).padStart(2,'0')}`, W - 10, 10);
+    ctx.restore();
+  }
+
+  function tick(timestamp) {
+    if (!isPlaying) return;
+    if (!startTime) startTime = timestamp - lastPause * 1000;
+    elapsed = Math.min((timestamp - startTime) / 1000, DURATION);
+
+    render(elapsed);
+    updateUI(elapsed);
+
+    if (elapsed >= DURATION) {
+      elapsed = DURATION;
+      isPlaying = false;
+      showOverlay(true);
+      updatePlayIcon(false);
+      return;
+    }
+    rafId = requestAnimationFrame(tick);
+  }
+
+  function updateUI(time) {
+    const pct = (time / DURATION) * 100;
+    const fill = document.getElementById('progressFill');
+    if (fill) fill.style.width = pct + '%';
+    const vcTime = document.getElementById('vcTime');
+    const s = Math.floor(time);
+    if (vcTime) vcTime.textContent = `0:${String(s).padStart(2,'0')} / 0:30`;
+  }
+
+  function showOverlay(show) {
+    const overlay = document.getElementById('videoOverlay');
+    if (!overlay) return;
+    if (show) overlay.classList.remove('hidden');
+    else overlay.classList.add('hidden');
+    // Update play icon in overlay
+    const icon = overlay.querySelector('svg polygon, svg path');
+  }
+
+  function updatePlayIcon(playing) {
+    const ppIcon = document.getElementById('ppIcon');
+    if (!ppIcon) return;
+    ppIcon.innerHTML = playing
+      ? '<rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>'
+      : '<polygon points="5,3 19,12 5,21"/>';
+    // Also update play button in overlay
+    const overlayIcon = document.querySelector('.play-btn svg');
+    if (overlayIcon) overlayIcon.innerHTML = playing ? '' : '<polygon points="5,3 19,12 5,21"/>';
+  }
+
+  window.toggleVideo = function() {
+    if (elapsed >= DURATION) {
+      // Restart
+      elapsed = 0; startTime = null; lastPause = 0;
+    }
+    isPlaying = !isPlaying;
+    showOverlay(!isPlaying);
+    updatePlayIcon(isPlaying);
+    if (isPlaying) {
+      startTime = null;
+      lastPause = elapsed;
+      rafId = requestAnimationFrame(tick);
+    } else {
+      lastPause = elapsed;
+      if (rafId) cancelAnimationFrame(rafId);
+    }
+  };
+
+  window.restartVideo = function() {
+    if (rafId) cancelAnimationFrame(rafId);
+    elapsed = 0; startTime = null; lastPause = 0; isPlaying = true;
+    showOverlay(false);
+    updatePlayIcon(true);
+    rafId = requestAnimationFrame(tick);
+  };
+
+  window.seekVideo = function(e) {
+    const bg = document.getElementById('progressBg');
+    if (!bg) return;
+    const rect = bg.getBoundingClientRect();
+    const pct = Math.max(0, Math.min((e.clientX - rect.left) / rect.width, 1));
+    elapsed = pct * DURATION;
+    lastPause = elapsed;
+    startTime = null;
+    render(elapsed);
+    updateUI(elapsed);
+    if (!isPlaying) showOverlay(false);
+  };
+
+  window.toggleMute = function() {
+    isMuted = !isMuted;
+    const muteIcon = document.getElementById('muteIcon');
+    if (muteIcon) {
+      muteIcon.innerHTML = isMuted
+        ? '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>'
+        : '<polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>';
+    }
+  };
+
+  // Draw first frame immediately
+  render(0);
+
+  // Redraw on resize
+  window.addEventListener('resize', function() { resizeCanvas(); render(elapsed); });
+
+})();
+// ═══════════════════════════════════════════════
+  const text = document.getElementById('emailText').innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.getElementById('copyBtn');
+    btn.textContent = '✓ Copied!';
+    setTimeout(() => { btn.innerHTML = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copy Email'; }, 2200);
+  }).catch(() => { alert('Select and copy manually.'); });
+}
+</script>
+</body>
+</html>
